@@ -1,0 +1,29 @@
+body {
+    background-color: #f8f9fa !important;
+}
+
+
+.btn-primary {
+    background-color: #18204A !important; 
+}
+
+
+.btn-outline-primary {
+    color: #18204A !important;
+    border-color: #18204A !important;
+}
+
+.btn-outline-success {
+    color: #20cc79 !important;
+    border-color: #20cc79 !important;
+}
+
+.btn-red {
+    background-color: #FF5842 !important;
+    color: #fff !important;
+}
+
+.btn-green {
+    background-color: #20cc79 !important;
+    color: #fff !important;
+}
