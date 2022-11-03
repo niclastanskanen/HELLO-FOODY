@@ -1,7 +1,9 @@
+{% load static %}
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand me-2" href="{% url 'index' %}">
-            <img src="#" height="100" width="200" alt="Hello Foody Logo" loading="lazy"
+            <img src="{% static 'images/logo.png' %}" height="100" width="200" alt="Hello Foody Logo" loading="lazy"
                 style="margin-top: -1px;" />
         </a>
         <div class="d-flex align-items-center d-none d-lg-block">
