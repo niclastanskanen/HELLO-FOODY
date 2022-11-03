@@ -15,3 +15,8 @@ class Restaurants(View):
 class Search(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'customer/search.html')
+
+
+class Login(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'customer/login.html')
