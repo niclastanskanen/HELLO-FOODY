@@ -20,3 +20,8 @@ class Search(View):
 class Login(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'customer/login.html')
+
+
+class Cart(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'customer/cart.html')
