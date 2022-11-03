@@ -1,5 +1,5 @@
 {% extends 'customer/base.html' %}
-
+{% load static %}
 {% block content %}
 <!-- Jumbotron -->
 
@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-9 mx-auto position-relative">
-                <h1 class="mb-5">Build a landing page for your business or project and generate more leads!</h1>
+                <h1 class="mb-5">Let Your Fingers Do the Walking Through the Food Delivery</h1>
             </div>
             <div class="col-md-10 col-lg-8 col-xl-7 mx-auto position-relative">
                 <form>
@@ -34,19 +34,37 @@
                 <h2>How It Works</h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row pt-2">
             <div class="col-md-4">
+                <img
+  src="{% static 'images/order-food.png' %}"
+  class="img-fluid rounded-circle shadow-2-strong"
+  alt="Townhouses and Skyscrapers"
+/>
                 <h3>Step 1</h3>
-                <p>Simply enter the food you're looking for and click "search"</p>
-            </div>
-            <div class="col-md-4">
-                <h3>Step 2</h3>
+                <p>Simply enter the food you're looking for and click "search".</p>
                 <p>Once you choose a restaurant and a menu item, you're one step closer to finding the perfect fast food
-                    joint</p>
+                    joint!</p>
             </div>
             <div class="col-md-4">
+                <img
+  src="{% static 'images/delivery-food.png' %}"
+  class="img-fluid rounded-circle shadow-2-strong"
+  alt="Townhouses and Skyscrapers"
+/>
+                <h3>Step 2</h3>
+                <p>The restaurant begins preparing your meal as soon as it receives your order.</p>
+                <p>Our team will pick up and deliver your food as soon as it's ready!</p>
+            </div>
+            <div class="col-md-4">
+                <img
+  src="{% static 'images/give-food.jpeg' %}"
+  class="img-fluid rounded-circle shadow-2-strong"
+  alt="Townhouses and Skyscrapers"
+/>
                 <h3>Step 3</h3>
-                <p>Once your payment is settled, you can sit back and relax as we prepare your food.</p>
+                <p>Following our deliveries will help you prepare for when the food arrives.</p>
+                <p>Let's enjoy a good meal!</p>
             </div>
         </div>
     </div>
