@@ -7,6 +7,6 @@ class Index(View):
         return render(request, 'customer/index.html')
 
 
-class About(View):
+class Restaurants(View):
     def get(self, request, *args, **kwargs):
-        return render(request, 'customer/about.html')
+        return render(request, 'customer/restaurants.html')
