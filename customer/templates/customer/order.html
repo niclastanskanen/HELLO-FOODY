@@ -11,12 +11,13 @@
                     {% for starter in starters %}
                     <div class="row">
                         <div class="col-md-2 col-sm-12">
-                            <img class="rounded" src="{{ starter.image.url }}" width="150" height="100"/>
+                            <img class="rounded" src="{{ starter.image.url }}" width="150" height="100" />
                         </div>
                         <div class="col-md-8 col-sm-12">
                             <div class="d-flex flex-row">
                                 <div class="form-group form-check">
-                                    <input type="checkbox" name="items[]" class="form-check-input" value="{{ starter.pk }}">
+                                    <input type="checkbox" name="items[]" class="form-check-input"
+                                        value="{{ starter.pk }}">
                                     <label class="form-check-label">{{ starter.name }}</label>
                                 </div>
                                 <p class="font-weight-bold pl-5">{{ starter.price }}</p>
@@ -24,8 +25,8 @@
                             <p>{{ starter.description }}</p>
                         </div>
                     </div>
-                    <hr />
-                {% endfor %}
+                    <hr class="hr hr-blurry" />
+                    {% endfor %}
                 </div>
 
                 <div class="pt-5">
@@ -33,12 +34,13 @@
                     {% for main in main %}
                     <div class="row mt-4">
                         <div class="col-md-2 col-sm-12">
-                            <img class="rounded" src="{{ main.image.url }}" width="150" height="100"/>
+                            <img class="rounded" src="{{ main.image.url }}" width="150" height="100" />
                         </div>
                         <div class="col-md-8 col-sm-12">
                             <div class="d-flex flex-row">
                                 <div class="form-group form-check">
-                                    <input type="checkbox" name="items[]" class="form-check-input" value="{{ main.pk }}">
+                                    <input type="checkbox" name="items[]" class="form-check-input"
+                                        value="{{ main.pk }}">
                                     <label class="form-check-label">{{ main.name }}</label>
                                 </div>
                                 <p class="font-weight-bold pl-5">{{ main.price }}</p>
@@ -46,7 +48,7 @@
                             <p>{{ main.description }}</p>
                         </div>
                     </div>
-                    <hr />
+                    <hr class="hr hr-blurry" />
                     {% endfor %}
                 </div>
 
@@ -55,12 +57,13 @@
                     {% for dessert in desserts %}
                     <div class="row mt-4">
                         <div class="col-md-2 col-sm-12">
-                            <img class="rounded" src="{{ dessert.image.url }}" width="150" height="100"/>
+                            <img class="rounded" src="{{ dessert.image.url }}" width="150" height="100" />
                         </div>
                         <div class="col-md-8 col-sm-12">
                             <div class="d-flex flex-row">
                                 <div class="form-group form-check">
-                                    <input type="checkbox" name="items[]" class="form-check-input" value="{{ dessert.pk }}">
+                                    <input type="checkbox" name="items[]" class="form-check-input"
+                                        value="{{ dessert.pk }}">
                                     <label class="form-check-label">{{ dessert.name }}</label>
                                 </div>
                                 <p class="font-weight-bold pl-5">{{ dessert.price }}</p>
@@ -68,7 +71,7 @@
                             <p>{{ dessert.description }}</p>
                         </div>
                     </div>
-                    <hr />
+                    <hr class="hr hr-blurry" />
                     {% endfor %}
                 </div>
 
@@ -77,12 +80,13 @@
                     {% for drink in drinks %}
                     <div class="row mt-4">
                         <div class="col-md-2 col-sm-12">
-                            <img class="rounded" src="{{ drink.image.url }}" width="150" height="100"/>
+                            <img class="rounded" src="{{ drink.image.url }}" width="150" height="100" />
                         </div>
                         <div class="col-md-8 col-sm-12">
                             <div class="d-flex flex-row">
                                 <div class="form-group form-check">
-                                    <input type="checkbox" name="items[]" class="form-check-input" value="{{ drink.pk }}">
+                                    <input type="checkbox" name="items[]" class="form-check-input"
+                                        value="{{ drink.pk }}">
                                     <label class="form-check-label">{{ drink.name }}</label>
                                 </div>
                                 <p class="font-weight-bold pl-5">{{ drink.price }}</p>
@@ -90,7 +94,7 @@
                             <p>{{ drink.description }}</p>
                         </div>
                     </div>
-                    <hr />
+                    <hr class="hr hr-blurry" />
                     {% endfor %}
                 </div>
 
