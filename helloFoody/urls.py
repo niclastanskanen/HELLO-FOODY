@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 from customer.views import Index, Restaurants, Search, Login, Cart
 
 urlpatterns = [
@@ -24,4 +26,4 @@ urlpatterns = [
     path('search/', Search.as_view(), name='search'),
     path('login/', Login.as_view(), name='login'),
     path('cart/', Cart.as_view(), name='cart'),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
