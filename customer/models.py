@@ -2,6 +2,8 @@ from django.db import models
 from cloudinary.models import CloudinaryField
 
 
+# Menu item that holds all of the fields for each individual
+# menu item that will be on the website
 class MenuItem(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
@@ -13,8 +15,24 @@ class MenuItem(models.Model):
         return self.name
 
 
+# Category model linked with menu element category with
+# a main relationship. each category can have many menu items
+# each item can have many categories
 class Category(models.Model):
     name = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
+
+
+# order model will store the order itself
+# and any items connected to that order
+# each menu item can have multiple order
+# each order can have multiplemenu items
+class OrderModel(models.Model):
+    created_on = models.DateTimeField(auto_now_add=True)
+    price = models.DecimalField(max_digits=7, decimal_places=2)
+    items = models.ManyToManyField('MenuItem', related_name='order', blank=True)
+
+    def __str__(self):
+        return f'Order: {self.created_on.strftime("%b %d %I: %M %p")}'
