@@ -1,6 +1,7 @@
 {% extends 'customer/base.html' %}
 
 {% block content %}
+<!-- starters  -->
 <div class="container mb-5">
     <div class="row justify-content-center mt-1">
         <div class="col-md-12 col-sm-12 p-4">
@@ -28,7 +29,8 @@
                     <hr class="hr hr-blurry" />
                     {% endfor %}
                 </div>
-
+                <!-- starters  -->
+                <!-- main -->
                 <div class="pt-5">
                     <h3>Main</h3>
                     {% for main in main %}
@@ -51,7 +53,8 @@
                     <hr class="hr hr-blurry" />
                     {% endfor %}
                 </div>
-
+                <!-- main -->
+                <!-- desserts -->
                 <div class="pt-5">
                     <h3>Desserts</h3>
                     {% for dessert in desserts %}
@@ -74,7 +77,8 @@
                     <hr class="hr hr-blurry" />
                     {% endfor %}
                 </div>
-
+                <!-- desserts -->
+                <!-- drinks -->
                 <div class="pt-5">
                     <h3>Drinks</h3>
                     {% for drink in drinks %}
@@ -97,8 +101,8 @@
                     <hr class="hr hr-blurry" />
                     {% endfor %}
                 </div>
+                <!-- drinks -->
                 <!-- input fields  -->
-
                 <label for="name">Full Name</label>
                 <div class="form-outline mb-2">
                     <input required type="text" id="form12" class="form-control" name="name" />
