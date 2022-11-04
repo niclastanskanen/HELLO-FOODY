@@ -52,6 +52,14 @@ class Order(View):
     # return name, price and id to show calculations price
     # then pass in the items and price to show in a template afterwards
     def post(self, request, *args, **kwargs):
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        street = request.POST.get('street')
+        phone = request.POST.get('phone')
+        city = request.POST.get('city')
+        zip_code = request.POST.get('zip')
+        message = request.POST.get('message')
+
         order_items = {
             'items': []
         }
@@ -75,7 +83,15 @@ class Order(View):
             price += item['price']
             item_ids.append(item['id'])
 
-        order = OrderModel.objects.create(price=price)
+        order = OrderModel.objects.create(
+            price=price,
+            name=name,
+            email=email,
+            street=street,
+            city=city,
+            phone=phone,
+            zip_code=zip_code
+            )
         order.items.add(*item_ids)
 
         context = {
