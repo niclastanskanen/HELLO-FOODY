@@ -7,6 +7,7 @@
             <form method="POST">
                 {% csrf_token %}
                 <div class="pt-5">
+                    <h3>Starters</h3>
                     {% for starter in starters %}
                     <div class="row">
                         <div class="col-md-2 col-sm-12">
@@ -28,6 +29,7 @@
                 </div>
 
                 <div class="pt-5">
+                    <h3>Main</h3>
                     {% for main in main %}
                     <div class="row mt-4">
                         <div class="col-md-2 col-sm-12">
@@ -49,6 +51,7 @@
                 </div>
 
                 <div class="pt-5">
+                    <h3>Desserts</h3>
                     {% for dessert in desserts %}
                     <div class="row mt-4">
                         <div class="col-md-2 col-sm-12">
@@ -70,6 +73,7 @@
                 </div>
 
                 <div class="pt-5">
+                    <h3>Drinks</h3>
                     {% for drink in drinks %}
                     <div class="row mt-4">
                         <div class="col-md-2 col-sm-12">
