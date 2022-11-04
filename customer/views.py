@@ -4,7 +4,6 @@ from django.core.mail import send_mail
 from .models import MenuItem, Category, OrderModel
 
 
-
 class Index(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'customer/index.html')
@@ -98,8 +97,8 @@ class Order(View):
 
         # After everything is done, send confirmation email to the user
         body = ('Thank you for your order! Your food is being made and will be delivered soon!\n'
-            f'Your total: {price}\n'
-            'Thank you again for your order!')
+                f'Your total: {price}\n'
+                'Thank you again for your order!')
 
         send_mail(
             'Thank You For Your Order',
