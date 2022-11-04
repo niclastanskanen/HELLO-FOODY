@@ -90,7 +90,7 @@ class Order(View):
             street=street,
             city=city,
             phone=phone,
-            zip_code=zip_code
+            zip_code=zip_code,
             )
         order.items.add(*item_ids)
 
