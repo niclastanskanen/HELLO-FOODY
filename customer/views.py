@@ -129,3 +129,6 @@ class OrderConfirmation(View):
         }
 
         return render(request, 'customer/order_confirmation.html', context)
+
+    def post(self, request, pk, *args, **kwargs):
+        print(request.body)
