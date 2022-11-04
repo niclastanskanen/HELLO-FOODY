@@ -146,10 +146,32 @@
                     <label class="form-label" for="textAreaExample">Message</label>
                 </div>
         </div>
-        <!-- input fields  -->
-        <button class="btn btn-primary btn-rounded  mt-5">Place Order!</button>
-        </form>
     </div>
+    <!-- input fields  -->
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#submitModal">
+        Submit Order!
+    </button>
+    <!-- <button class="btn btn-primary btn-rounded  mt-5">Place Order!</button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="submitModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="submitModalLabel">Submit Your Order!</h5>
+                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Go Back</button>
+                    <button type="submit" class="btn btn-primary">Place Order!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
 </div>
 </div>
 {% endblock content %}
