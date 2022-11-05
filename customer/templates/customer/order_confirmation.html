@@ -34,7 +34,7 @@
 
 <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 <script>
-    function getCookie(name) {
+function getCookie(name) {
     let cookieValue = null;
     if (document.cookie && document.cookie !== '') {
         const cookies = document.cookie.split(';');
@@ -86,7 +86,14 @@ const csrftoken = getCookie('csrftoken');
         // Show a confirmation message to the buyer
         $.ajax({
             type: 'POST',
-            url: "{ url 'order-confirmation' pk %}",
+            url: "{% url 'order-confirmation' pk %}",
+            beforeSend: function(request) {
+                request.setRequestHeader('X-CSRFToken', csrftoken)
+            },
+            data: JSON.stringify({'isPaid': true}),
+            success: function(data) {
+                window.location.href = '/payment-confirmation/'
+            }
         })
       });
     }
