@@ -1,3 +1,4 @@
+import json
 from django.shortcuts import render, redirect
 from django.views import View
 from django.core.mail import send_mail
@@ -130,7 +131,13 @@ class OrderConfirmation(View):
         return render(request, 'customer/order_confirmation.html', context)
 
     def post(self, request, pk, *args, **kwargs):
-        print(request.body)
+        data = json.loads(request.body)
+
+        if data['isPaid']:
+            order = OrderModel.objects.get(pk=pk)
+            order.is_paid = True
+            order.save()
+  
         return redirect('payment-confirmation')
 
 
