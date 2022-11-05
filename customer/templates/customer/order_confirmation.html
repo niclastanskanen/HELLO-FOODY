@@ -20,5 +20,61 @@
             <p class="font-weight-bold pt-4">Total: {{ price }}</p>
         </div>
     </div>
+    <div class="row justify-content-center pb-2 pt-5">
+        <div class="col-md-6 text-center">
+            <h3>Pay Now or Pay With Cash At Delivery</h3>
+        </div>
+    </div>
+    <div class="row justify-content-center pb-5">
+        <div class="col-md-6 text-center">
+            <div id="paypal-button"></div>
+        </div>
+    </div>
 </div>
+
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+<script>
+  paypal.Button.render({
+    // Configure environment
+    env: 'sandbox',
+    client: {
+      sandbox: 'demo_sandbox_client_id',
+      production: 'demo_production_client_id'
+    },
+    // Customize button (optional)
+    locale: 'en_US',
+    style: {
+      size: 'large',
+      color: 'blue',
+      shape: 'rect',
+    },
+
+    // Enable Pay Now checkout flow (optional)
+    commit: true,
+
+    // Set up a payment
+    payment: function(data, actions) {
+      return actions.payment.create({
+        transactions: [{
+          amount: {
+            total: '{{ price }}',
+            currency: 'USD'
+          }
+        }]
+      });
+    },
+    // Execute the payment
+    onAuthorize: function(data, actions) {
+      return actions.payment.execute().then(function() {
+        // Show a confirmation message to the buyer
+        $.ajax({
+            type: 'POST',
+            url: "{ url 'order-confirmation' pk %}",
+        })
+      });
+    }
+  }, '#paypal-button');
+
+</script>
+
 {% endblock content %}
