@@ -131,6 +131,7 @@ class OrderConfirmation(View):
 
     def post(self, request, pk, *args, **kwargs):
         print(request.body)
+        return redirect('payment-confirmation')
 
 
 class OrderPayConfirmation(View):
