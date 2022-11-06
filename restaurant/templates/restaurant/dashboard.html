@@ -29,9 +29,25 @@
                     </tr>
                 </thead>
                 <tbody>
+                    {% for order in orders %}
                     <tr>
-
+                        <th scope="row">{{ order.pk }}</th>
+                        <td>{{ order.price }}</td>
+                        <td>{{ order.name }}</td>
+                        <td>{{ order.email }}</td>
+                        <td>{{ order.street }}</td>
+                        <td>{{ order.city }}</td>
+                        <td>{{ order.zip_code }}</td>
+                        <td>{{ order.phone}}</td>
+                        <td>
+                            {% if order.is_paid %}
+                            <i style="color: #20cc79;" class="fas fa-check"></i>
+                            {% else %}
+                            <i style="color: #ff5842;" class="fas fa-times"></i>
+                            {% endif %}
+                        </td>
                     </tr>
+                    {% endfor %}
                 </tbody>
             </table>
         </div>
