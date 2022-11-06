@@ -5,7 +5,7 @@ from django.utils.timezone import datetime
 from customer.models import OrderModel
 
 
-class Dashboard(LoginRequired, UserPassesTest, View):
+class Dashboard(LoginRequiredMixin, UserPassesTestMixin, View):
     def get(self, request, *args, **kwargs):
         # get the current date
         today = datetime.today()
