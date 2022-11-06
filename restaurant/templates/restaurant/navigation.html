@@ -1,0 +1,51 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand me-2" href="{% url 'index' %}">
+            <img src="{% static 'images/logo.png' %}" height="100" width="200" alt="Hello Foody Logo" loading="lazy"
+                style="margin-top: -1px;" />
+        </a>
+        <div class="d-flex align-items-center d-none d-lg-block">
+            <a href="{% url 'login' %}">
+                <button type="button" class="btn btn-outline-primary btn-rounded px-3 me-2"
+                    data-mdb-ripple-color="dark">Sign In</button></a>
+            <a href="{% url 'login' %}">
+                <button type="button" class="btn btn-primary btn-rounded px-3 me-2">Sign Up</button>
+            </a>
+        </div>
+        <div class="d-flex align-items-center d-lg-none">
+            <a href="{% url 'cart' %}">
+                <button type="button" class="btn btn-outline-primary btn-lg btn-floating" data-mdb-ripple-color="dark">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile view navigation -->
+<nav class="navbar fixed-bottom navbar-light bg-light">
+    <div class="container-fluid px-5 d-lg-none">
+        <a href="{% url 'index' %}">
+            <button type="button" class="btn btn-primary btn-lg btn-floating">
+                <i class="fas fa-house"></i>
+            </button>
+        </a>
+        <a href="{% url 'restaurants' %}">
+            <button type="button" class="btn btn-outline-success btn-floating" data-mdb-ripple-color="dark">
+                <i class="fas fa-utensils"></i>
+            </button>
+        </a>
+        <a href="{% url 'search' %}">
+            <button type="button" class="btn btn-red btn-floating">
+                <i class="fas fa-search"></i>
+            </button>
+        </a>
+        <a href="{% url 'login' %}">
+            <button type="button" class="btn btn-green btn-floating">
+                <i class="fas fa-user"></i>
+            </button>
+        </a>
+    </div>
+</nav>
