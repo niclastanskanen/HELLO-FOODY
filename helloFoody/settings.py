@@ -19,6 +19,7 @@ if os.path.isfile('env.py'):
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 
@@ -43,26 +44,26 @@ AUTHENTICATION_BACKENDS = [
 
 INSTALLED_APPS = [
 
-    'crispy_forms',
-    'crispy_bootstrap5',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    "crispy_forms",
+    "crispy_bootstrap5",
     'customer',
     'restaurant',
 ]
 
 SITE_ID = 1
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -166,6 +167,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ACCOUNT_ADAPTER = 'restaurant.account_adapter.NoNewUsersAccountAdapter'
 
-CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
-CRISPY_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_TEMPLATE_PACK = "bootstrap4"
