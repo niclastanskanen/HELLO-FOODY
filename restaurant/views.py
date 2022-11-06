@@ -28,3 +28,7 @@ class Dashboard(LoginRequired, UserPassesTest, View):
 
         return render(request, 'restaurant/dashboard.html', context)
 
+    # method to defined to validate if the user is allowed to view dashboard
+    def test_func(self):
+        return self.request.user.groups.filter(name='Staff').exists()
+
