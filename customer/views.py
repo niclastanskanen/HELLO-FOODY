@@ -137,7 +137,7 @@ class OrderConfirmation(View):
             order = OrderModel.objects.get(pk=pk)
             order.is_paid = True
             order.save()
-  
+
         return redirect('payment-confirmation')
 
 
