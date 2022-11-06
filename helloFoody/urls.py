@@ -22,6 +22,7 @@ from customer.views import Index, Restaurants, Search, Login, Cart, Order, Order
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
+    path('restaurant/', include('restaurant.urls')),
     path('', Index.as_view(), name='index'),
     path('restaurants/', Restaurants.as_view(), name='restaurants'),
     path('search/', Search.as_view(), name='search'),
