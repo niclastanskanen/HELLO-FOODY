@@ -52,6 +52,7 @@
                                             <th>Zip code</th>
                                             <th>Phone</th>
                                             <th>Is Paid?</th>
+                                            <th>Details</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -72,6 +73,7 @@
                                                 <i style="color: #ff5842;" class="fas fa-times"></i>
                                                 {% endif %}
                                             </td>
+                                            <td><a href="{% url 'order-details' order.pk %}"><i class="fas fa-edit"></i></a></td>
                                         </tr>
                                         {% endfor %}
                                     </tbody>
