@@ -1,0 +1,51 @@
+{% extends 'restaurant/base.html' %}
+
+{% block content %}
+<div class="container pt-5">
+    <div class="row justify-content-center">
+        <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+                <h3 class="card-title">Order ID: {{ order.pk }}</h3>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Customer Information:</h5>
+                        <p class="card-text">Name: {{ order.name }}</p>
+                        <p class="card-text">Email: {{ order.email }}</p>
+                        <p class="card-text">Phone: {{ order.phone }}</p>
+                        <h5 class="card-title">Address:</h5>
+                        <p class="card-text">Street: {{ order.street }}</p>
+                        <p class="card-text">City: {{ order.city }}</p>
+                        <p class="card-text">Zip Code: {{ order.zip_code }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Payment And Delivery Information</h5>
+                        <p class="card-text mt-3">
+                            {% if order.is_paid %}
+                            <p class="card-text"><i style="color: #20cc79;" class="fas fa-check"></i> <span
+                                    class="pl-2">Order Has Been Paid!</span></p>
+                            {% else %}
+                            <p class="card-text"><i style="color: #ff5842;" class="fas fa-times"></i> <span
+                                    class="pl-2">Order Has Not Been Paid!</span></p>
+                            {% endif %}</p>
+                        {% if order.is_delivered %}
+                        <p class="card-text"><i style="color: #20cc79;" class="fas fa-check"></i> <span
+                                class="pl-2">Order Has Been Delivered!</span></p>
+                        {% else %}
+                        <form method="post">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-outline-success">Mark as Delivered</button>
+                        </form>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock content %}
