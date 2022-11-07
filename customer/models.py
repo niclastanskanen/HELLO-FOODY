@@ -42,6 +42,7 @@ class OrderModel(models.Model):
     zip_code = models.IntegerField(blank=True, null=True)
     phone = models.IntegerField(blank=True, null=True)
     is_paid = models.BooleanField(default=False)
+    is_delivered = models.BooleanField(default=False)
 
     def __str__(self):
         return f'Order: {self.created_on.strftime("%b %d %I: %M %p")}'
