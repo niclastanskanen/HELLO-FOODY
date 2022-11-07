@@ -73,7 +73,8 @@
                                                 <i style="color: #ff5842;" class="fas fa-times"></i>
                                                 {% endif %}
                                             </td>
-                                            <td><a href="{% url 'order-details' order.pk %}"><i class="fas fa-edit"></i></a></td>
+                                            <td><a href="{% url 'order-details' order.pk %}"><i
+                                                        class="fas fa-edit"></i></a></td>
                                         </tr>
                                         {% endfor %}
                                     </tbody>
@@ -106,6 +107,4 @@
             </div>
         </div>
     </div>
-
-
-    {% endblock content %}
+{% endblock content %}

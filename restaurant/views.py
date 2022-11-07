@@ -15,13 +15,18 @@ class Dashboard(LoginRequiredMixin, UserPassesTestMixin, View):
             created_on__day=today.day)
 
         # loop throught the orders and add the price value
+        # check if order is not delivered
+        undelivered_order = []
         total_revenue = 0
         for order in orders:
             total_revenue += order.price
 
+            if not order.is_delivered:
+                undelivered_order.append(order)
+
         # pass total number of orders and total revenue into template
         context = {
-            'orders': orders,
+            'orders': undelivered_order,
             'total_revenue': total_revenue,
             'total_orders': len(orders)
         }
