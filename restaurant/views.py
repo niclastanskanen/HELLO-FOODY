@@ -32,3 +32,16 @@ class Dashboard(LoginRequiredMixin, UserPassesTestMixin, View):
     def test_func(self):
         return self.request.user.groups.filter(name='Staff').exists()
 
+
+# Order details for restaurang logged in
+class OrderDetails(LoginRequiredMixin, UserPassesTestMixin, View):
+    def get(self, request, pk, *args, **kwargs):
+        order = OrderModel.objects.get(pk=pk)
+        context = {
+            'order': order
+        }
+
+        return render(request, 'restaurant/order-details.html', context)
+
+    def test_func(self):
+        return self.request.user.groups.filter(name='Staff').exists()
