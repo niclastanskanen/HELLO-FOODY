@@ -26,7 +26,7 @@ class Menu(View):
         return render(request, 'customer/menu.html', context)
 
 
-class Search(View):
+class MenuSearch(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'customer/search.html')
 
