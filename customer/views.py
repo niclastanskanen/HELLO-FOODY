@@ -15,6 +15,17 @@ class Restaurants(View):
         return render(request, 'customer/restaurants.html')
 
 
+class Menu(View):
+    def get(self, request, *args, **kwargs):
+        menu_items = MenuItem.objects.all()
+
+        context = {
+            'menu_items': menu_items
+        }
+
+        return render(request, 'customer/menu.html', context)
+
+
 class Search(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'customer/search.html')

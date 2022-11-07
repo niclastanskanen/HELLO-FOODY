@@ -2,7 +2,14 @@ from django.db import models
 from cloudinary.models import CloudinaryField
 
 
-# Menu item that holds all of the fields for each individual
+# # restaurants
+# class Restaurant(models.Model):
+#     name = models.CharField(max_length=100)
+
+#     def __str__(self):
+#         return self.name
+
+# menu item that holds all of the fields for each individual
 # menu item that will be on the website
 class MenuItem(models.Model):
     name = models.CharField(max_length=100)
