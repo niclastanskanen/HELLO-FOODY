@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views import View
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from django.utils.timezone import datetime
+from django.http import HttpResponseRedirect
 from customer.models import OrderModel
 from .forms import MenuForm
 
@@ -66,10 +67,18 @@ class OrderDetails(LoginRequiredMixin, UserPassesTestMixin, View):
 
 class AddMenu(LoginRequiredMixin, UserPassesTestMixin, View):
     def get(self, request, *args, **kwargs):
+        submitted = False
+        if request.method == "POST":
+            form = MenuForm(request.POST)
+            if form.is_valid():
+                form.save()
+                return HttpResponseRedirect('/add-menu?submitted=True')
+        else:
+            form = MenuForm
+            if 'submitted' in request.GET:
+                submitted = True
 
-        form = MenuForm
-
-        return render(request, 'restaurant/add-menu.html', {'form':form})
+        return render(request, 'restaurant/add-menu.html', {'form':form, 'submitted':submitted})
 
     def test_func(self):
         return self.request.user.groups.filter(name='Staff').exists()

@@ -4,11 +4,16 @@
 <td><a href="{% url 'dashboard' %}"><i
     class="fas fa-arrow-left"> Go Back</i></a></td>
 <h1>Add Menu Items</h1>
+{% if submitted %}
+Your Menu Item Was Added Succefully!
+{% else %}
+
 <div>
     <form action="" method="POST">
         {% csrf_token %}
         {{ form.as_p }}
         <input type="submit" value="Submit" class="btn btn-primary btn-rounded ">
     </form>
+    {% endif %}
 </div>
 {% endblock content %}
