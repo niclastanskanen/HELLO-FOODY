@@ -2,6 +2,8 @@
 
 {% block content %}
 <div class="container pt-5">
+    <td><a href="{% url 'dashboard' %}"><i
+        class="fas fa-arrow-left"> Go Back</i></a></td>
     <div class="row justify-content-center">
         <div class="card text-center" style="width: 18rem;">
             <div class="card-body">
@@ -48,4 +50,6 @@
                 </div>
             </div>
         </div>
-        {% endblock content %}
+    </div>
+</div>
+{% endblock content %}
