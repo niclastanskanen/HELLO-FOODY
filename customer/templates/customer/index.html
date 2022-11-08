@@ -10,10 +10,10 @@
                 <h1 class="mb-5">Let Your Fingers Do the Walking Through the Food Delivery</h1>
             </div>
             <div class="col-md-10 col-lg-8 col-xl-7 mx-auto position-relative">
-                <form>
+                <form method="GET" action="{% url 'menu-search' %}">
                     <div class="row">
                         <div class="col-12 col-md-9 mb-2 mb-md-0">
-                            <input class="form-control form-control-lg" type="text"
+                            <input class="form-control form-control-lg" type="text" name="q" aria-label="Search" value="{{ request.GET.q }}"
                                 placeholder="Search for specific restaurant" />
                         </div>
                         <div class="col-12 col-md-3">
