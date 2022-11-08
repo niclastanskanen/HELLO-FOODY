@@ -10,6 +10,7 @@
                 <div class="pt-5">
                     <h3>Restaurants</h3>
                     {% for restaurant in restaurants %}
+
                     <div class="row">
                         <div class="col-md-2 col-sm-12">
                             <img class="rounded" src="{{ restaurant.image.url }}" width="150" height="100" />
@@ -17,13 +18,12 @@
                         <div class="col-md-8 col-sm-12">
                             <div class="d-flex flex-row">
                                 <div class="form-group form-check">
-                                    <input type="checkbox" name="items[]" class="form-check-input"
-                                        value="{{ restaurant.pk }}">
                                     <label class="form-check-label">{{ restaurant.name }}</label>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <hr class="hr hr-blurry" />
                     {% endfor %}
                 </div>

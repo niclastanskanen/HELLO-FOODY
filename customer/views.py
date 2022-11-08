@@ -14,9 +14,13 @@ class Index(View):
 
 class Restaurants(View):
     def get(self, request, *args, **kwargs):
-        
+        restaurants = Restaurant.objects.all()
 
-        return render(request, 'customer/restaurants.html')
+        context = {
+            'restaurants': restaurants
+        }
+
+        return render(request, 'customer/restaurants.html', context)
 
 
 class Menu(View):
