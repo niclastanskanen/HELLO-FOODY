@@ -11,22 +11,20 @@
                     <h3>Restaurants</h3>
                     {% for restaurant in restaurants %}
                     <div class="row">
-                        <div class="col-md-2 col-sm-12">
-                            <img class="rounded" src="" width="150" height="100" />
+                        <div class="col-md-8 col-sm-12">
+                            <img src="{{ restaurant.image.url }}" width="400" height="200" />
                         </div>
                         <div class="col-md-8 col-sm-12">
                             <div class="d-flex flex-row">
-                                <div class="form-group form-check">
-                                    <label class="form-check-label">{{ restaurant.name }}</label>
-                                </div>
+                                <h3>{{ restaurant.name }}</h3>
                             </div>
                         </div>
+                        <hr class="hr hr-blurry" />
+                        {% endfor %}
                     </div>
-                    <hr class="hr hr-blurry" />
-                    {% endfor %}
+                    <!-- Restaurants  -->
                 </div>
-                <!-- Restaurants  -->
         </div>
     </div>
-</div>
-{% endblock content %}
+
+    {% endblock content %}
