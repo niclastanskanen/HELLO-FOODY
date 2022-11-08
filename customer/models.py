@@ -3,11 +3,11 @@ from cloudinary.models import CloudinaryField
 
 
 # # restaurants
-# class Restaurant(models.Model):
-#     name = models.CharField(max_length=100)
+class Restaurant(models.Model):
+    name = models.CharField(max_length=100)
 
-#     def __str__(self):
-#         return self.name
+    def __str__(self):
+        return self.name
 
 # menu item that holds all of the fields for each individual
 # menu item that will be on the website
@@ -17,6 +17,7 @@ class MenuItem(models.Model):
     image = CloudinaryField('menu_images')
     price = models.DecimalField(max_digits=5, decimal_places=2)
     category = models.ManyToManyField('Category', related_name='item')
+    restaurant = models.ManyToManyField('Restaurant', related_name='restaurant')
 
     def __str__(self):
         return self.name

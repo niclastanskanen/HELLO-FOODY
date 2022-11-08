@@ -3,16 +3,19 @@ from django.shortcuts import render, redirect
 from django.views import View
 from django.db.models import Q
 from django.core.mail import send_mail
-from .models import MenuItem, Category, OrderModel
+from .models import MenuItem, Category, OrderModel, Restaurant
 
 
 class Index(View):
     def get(self, request, *args, **kwargs):
+
         return render(request, 'customer/index.html')
 
 
 class Restaurants(View):
     def get(self, request, *args, **kwargs):
+        
+
         return render(request, 'customer/restaurants.html')
 
 
