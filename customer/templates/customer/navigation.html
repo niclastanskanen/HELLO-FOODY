@@ -7,10 +7,13 @@
                 style="margin-top: -1px;" />
         </a>
         <div class="d-flex align-items-center d-none d-lg-block">
-            <a href="{% url 'login' %}">
+            <a href="{% url 'account_login' %}">
+                <button type="button" class="btn btn-outline-primary btn-rounded px-3 me-2"
+                    data-mdb-ripple-color="dark">Log Out</button></a>
+            <a href="{% url 'account_login' %}">
                 <button type="button" class="btn btn-outline-primary btn-rounded px-3 me-2"
                     data-mdb-ripple-color="dark">Sign In</button></a>
-            <a href="{% url 'login' %}">
+            <a href="{% url 'account_signup' %}">
                 <button type="button" class="btn btn-primary btn-rounded px-3 me-2">Sign Up</button>
             </a>
         </div>
