@@ -65,6 +65,9 @@ class OrderDetails(LoginRequiredMixin, UserPassesTestMixin, View):
         return self.request.user.groups.filter(name='Staff').exists()
 
 
+# How to add database form to a web pabe
+# credits: https://www.youtube.com/watch?v=CVEKe39VFu8
+# codemy.com
 class AddMenu(LoginRequiredMixin, UserPassesTestMixin, View):
     def get(self, request, *args, **kwargs):
         submitted = False
@@ -78,7 +81,7 @@ class AddMenu(LoginRequiredMixin, UserPassesTestMixin, View):
             if 'submitted' in request.GET:
                 submitted = True
 
-        return render(request, 'restaurant/add-menu.html', {'form':form, 'submitted':submitted})
+        return render(request, 'restaurant/add-menu.html', {'form': form, 'submitted': submitted})
 
     def test_func(self):
         return self.request.user.groups.filter(name='Staff').exists()
