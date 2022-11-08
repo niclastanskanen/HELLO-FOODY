@@ -60,10 +60,13 @@ INSTALLED_APPS = [
     "crispy_bootstrap5",
     'customer',
     'restaurant',
+    'user',
 ]
 
 SITE_ID = 1
 
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -165,8 +168,8 @@ CSRF_TRUSTED_ORIGINS = ['https://8000-niclastanska-hellofoody-zbjlc6wf5qo.ws-eu7
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-ACCOUNT_ADAPTER = 'restaurant.account_adapter.NoNewUsersAccountAdapter'
-LOGIN_REDIRECT_URL = 'dashboard'
+# ACCOUNT_ADAPTER = 'restaurant.account_adapter.NoNewUsersAccountAdapter'
+# LOGIN_REDIRECT_URL = 'dashboard'
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
