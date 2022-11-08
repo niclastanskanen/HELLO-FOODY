@@ -1,9 +1,10 @@
 {% extends 'restaurant/base.html' %}
 
 {% block content %}
+<div class="ms-5">
+    <td><a href="{% url 'dashboard' %}"><i class="fas fa-arrow-left pt-3 ml-5"> Go Back</i></a></td>
+</div>
 <div class="container pt-5">
-    <td><a href="{% url 'dashboard' %}"><i
-        class="fas fa-arrow-left"> Go Back</i></a></td>
     <div class="row justify-content-center">
         <div class="card text-center" style="width: 18rem;">
             <div class="card-body">

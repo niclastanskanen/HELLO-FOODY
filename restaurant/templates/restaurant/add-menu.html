@@ -1,19 +1,25 @@
 {% extends 'restaurant/base.html' %}
 
 {% block content %}
-<td><a href="{% url 'dashboard' %}"><i
-    class="fas fa-arrow-left"> Go Back</i></a></td>
-<h1>Add Menu Items</h1>
-{% if submitted %}
-Your Menu Item Was Added Succefully!
-{% else %}
-
-<div>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="btn btn-primary btn-rounded">Add Menu Item</button>
-    </form>
-    {% endif %}
+<div class="ms-5">
+    <td><a href="{% url 'dashboard' %}"><i class="fas fa-arrow-left pt-3 ml-5"> Go Back</i></a></td>
+</div>
+<div class="container pt-3">
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title text-center">Add Items To Menu</h3>
+            {% if submitted %}
+            Your Menu Item Was Added Succefully!
+            {% else %}
+            <div>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-primary btn-rounded">Add Menu Item</button>
+                </form>
+                {% endif %}
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock content %}
