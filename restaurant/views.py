@@ -3,6 +3,7 @@ from django.views import View
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from django.utils.timezone import datetime
 from customer.models import OrderModel
+from .forms import MenuForm
 
 
 class Dashboard(LoginRequiredMixin, UserPassesTestMixin, View):
@@ -58,6 +59,17 @@ class OrderDetails(LoginRequiredMixin, UserPassesTestMixin, View):
         }
 
         return render(request, 'restaurant/order-details.html', context)
+
+    def test_func(self):
+        return self.request.user.groups.filter(name='Staff').exists()
+
+
+class AddMenu(LoginRequiredMixin, UserPassesTestMixin, View):
+    def get(self, request, *args, **kwargs):
+
+        form = MenuForm
+
+        return render(request, 'restaurant/add-menu.html', {'form':form})
 
     def test_func(self):
         return self.request.user.groups.filter(name='Staff').exists()

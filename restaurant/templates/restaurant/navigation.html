@@ -6,5 +6,8 @@
             <img src="{% static 'images/logo.png' %}" height="100" width="200" alt="Hello Foody Logo" loading="lazy"
                 style="margin-top: -1px;" />
         </a>
+        <a href="{% url 'add-menu' %}">
+            <button type="button" class="btn btn-outline-primary btn-rounded px-3 me-2"
+                data-mdb-ripple-color="dark">Add Item to Menu</button></a>
     </div>
 </nav>

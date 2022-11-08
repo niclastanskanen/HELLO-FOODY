@@ -10,6 +10,7 @@ class Restaurant(models.Model):
     def __str__(self):
         return self.name
 
+
 # menu item that holds all of the fields for each individual
 # menu item that will be on the website
 class MenuItem(models.Model):
