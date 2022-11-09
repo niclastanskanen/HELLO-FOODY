@@ -85,3 +85,8 @@ class AddMenu(LoginRequiredMixin, UserPassesTestMixin, View):
 
     def test_func(self):
         return self.request.user.groups.filter(name='Staff').exists()
+
+
+class EditMenu(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'restaurant/edit-menu.html')
