@@ -21,7 +21,7 @@ class MenuForm(ModelForm):
             'name': forms.TextInput(attrs={'class': 'form-control'}),
             'description': forms.Textarea(attrs={'class': 'form-control'}),
             'image': forms.FileInput(attrs={'class': 'form-control', 'id': 'customFile'}),
-            'price': forms.TextInput(attrs={'class': 'form-control'}),
+            'price': forms.NumberInput(attrs={'class': 'form-control'}),
             'category': forms.SelectMultiple(attrs={'class': 'form-control'}),
             'restaurant': forms.SelectMultiple(attrs={'class': 'form-control'}),
         }

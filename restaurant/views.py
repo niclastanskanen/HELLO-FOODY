@@ -40,7 +40,7 @@ class Dashboard(LoginRequiredMixin, UserPassesTestMixin, View):
         return self.request.user.groups.filter(name='Staff').exists()
 
 
-# Order details for restaurang logged in
+# Order details in dashboard for restaurang logged in
 class OrderDetails(LoginRequiredMixin, UserPassesTestMixin, View):
     def get(self, request, pk, *args, **kwargs):
         order = OrderModel.objects.get(pk=pk)
