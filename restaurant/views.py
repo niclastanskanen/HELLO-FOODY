@@ -1,10 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import View
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from django.utils.timezone import datetime
 from django.http import HttpResponseRedirect
-from customer.models import OrderModel
+from customer.models import OrderModel, MenuItem
 from .forms import MenuForm
+
 
 
 class Dashboard(LoginRequiredMixin, UserPassesTestMixin, View):
@@ -87,6 +88,15 @@ class AddMenu(LoginRequiredMixin, UserPassesTestMixin, View):
         return self.request.user.groups.filter(name='Staff').exists()
 
 
-class EditMenu(View):
+class EditMenu(LoginRequiredMixin, UserPassesTestMixin, View):
     def get(self, request, *args, **kwargs):
-        return render(request, 'restaurant/edit-menu.html')
+        menu_items = MenuItem.objects.all()
+
+        context = {
+            'menu_items': menu_items
+        }
+
+        return render(request, 'restaurant/edit-menu.html', context)
+
+    def test_func(self):
+        return self.request.user.groups.filter(name='Staff').exists()

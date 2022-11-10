@@ -7,19 +7,34 @@
 <div class="container pt-3">
     <div class="card">
         <div class="card-body">
-            <h3 class="card-title text-center">Add Items To Menu</h3>
-            {% if submitted %}
-            Your Menu Item Was Added Succefully!
-            {% else %}
-            <div>
-                <form method="post">
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <button type="submit" class="btn btn-primary btn-rounded">Add Menu Item</button>
-                </form>
-                {% endif %}
+            <h3 class="card-title text-center">Edit Items In Menu</h3>
+            <div id="dataTable" class="table-responsive table mt-2" role="grid" aria-describedby="dataTable_info">
+                <table id="dataTable" class="table my-0">
+                    <thead>
+                        <tr>
+                            <th>Order Id</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in menu_items %}
+                        <tr>
+                            <th>{{ item.pk }}</th>
+                            <td>{{ item.name }}</td>
+                            <td>{{ item.description }}</td>
+                            <td>{{ item.price }}</td>
+                            <td><a href="#"><i class="fas fa-edit"></i></a></td>
+            
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
 </div>
+
 {% endblock content %}
