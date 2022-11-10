@@ -7,7 +7,9 @@
 <div class="container pt-3">
     <div class="card">
         <div class="card-body">
-            <h3 class="card-title text-center">Edit Items In Menu</h3>
+            <div class="card-header py-3">
+                <p class="text-primary m-0 fw-bold">Edit Menu</p>
+            </div>
             <div id="dataTable" class="table-responsive table mt-2" role="grid" aria-describedby="dataTable_info">
                 <table id="dataTable" class="table my-0">
                     <thead>
@@ -26,8 +28,7 @@
                             <td>{{ item.name }}</td>
                             <td>{{ item.description }}</td>
                             <td>{{ item.price }}</td>
-                            <td><a href="#"><i class="fas fa-edit"></i></a></td>
-            
+                            <td><a href="{% url 'edit-item' item.pk %}"><i class="fas fa-edit"></i></a></td>
                         </tr>
                         {% endfor %}
                     </tbody>
@@ -36,5 +37,6 @@
         </div>
     </div>
 </div>
+
 
 {% endblock content %}

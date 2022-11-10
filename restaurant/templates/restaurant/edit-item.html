@@ -1,0 +1,26 @@
+{% extends 'restaurant/base.html' %}
+
+{% block content %}
+<div class="ms-5">
+    <td><a href="{% url 'edit-menu' %}"><i class="fas fa-arrow-left pt-3 ml-5"> Go Back</i></a></td>
+</div>
+<div class="container pt-5">
+    <div class="row justify-content-center">
+        <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+                <h3 class="card-title">Item ID: {{ item.pk }}</h3>
+            </div>
+        </div>
+        <h1>Edit Item</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div>
+                <p>
+                    <button type="submit">Update Item</button>
+                </p>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}

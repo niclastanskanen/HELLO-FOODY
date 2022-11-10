@@ -71,23 +71,23 @@ class OrderDetails(LoginRequiredMixin, UserPassesTestMixin, View):
 # codemy.com
 class AddMenu(LoginRequiredMixin, UserPassesTestMixin, View):
     def get(self, request, *args, **kwargs):
-        submitted = False
-        if request.method == "POST":
+        if request.method == 'POST':
             form = MenuForm(request.POST)
             if form.is_valid():
                 form.save()
-                return HttpResponseRedirect('/add-menu?submitted=True')
-        else:
-            form = MenuForm
-            if 'submitted' in request.GET:
-                submitted = True
+                return redirect('restaurant/dashboard.html')
+        form = MenuForm()
+        context = {
+            'form': form
+        }
 
-        return render(request, 'restaurant/add-menu.html', {'form': form, 'submitted': submitted})
+        return render(request, 'restaurant/add-menu.html', context)
 
     def test_func(self):
         return self.request.user.groups.filter(name='Staff').exists()
 
 
+# Edit restaurant menu
 class EditMenu(LoginRequiredMixin, UserPassesTestMixin, View):
     def get(self, request, *args, **kwargs):
         menu_items = MenuItem.objects.all()
@@ -97,6 +97,20 @@ class EditMenu(LoginRequiredMixin, UserPassesTestMixin, View):
         }
 
         return render(request, 'restaurant/edit-menu.html', context)
+
+    def test_func(self):
+        return self.request.user.groups.filter(name='Staff').exists()
+
+
+# Edit restaurant items in menu
+class EditItem(LoginRequiredMixin, UserPassesTestMixin, View):
+    def get(self, request, pk, *args, **kwargs):
+        item = MenuItem.objects.get(pk=pk)
+
+        context = {
+            'item': item
+        }
+        return render(request, 'restaurant/edit-item.html', context)
 
     def test_func(self):
         return self.request.user.groups.filter(name='Staff').exists()
