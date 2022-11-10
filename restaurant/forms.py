@@ -14,7 +14,7 @@ class MenuForm(ModelForm):
             'image': 'Upload Image',
             'price': 'Add Price',
             'category': 'Choose Category',
-            'restaurant':'Choose Restaurant',
+            'restaurant': 'Choose Restaurant',
         }
 
         widgets = {

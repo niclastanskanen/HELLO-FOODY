@@ -7,7 +7,6 @@ from customer.models import OrderModel, MenuItem
 from .forms import MenuForm
 
 
-
 class Dashboard(LoginRequiredMixin, UserPassesTestMixin, View):
     def get(self, request, *args, **kwargs):
         # get the current date
@@ -106,9 +105,15 @@ class EditMenu(LoginRequiredMixin, UserPassesTestMixin, View):
 class EditItem(LoginRequiredMixin, UserPassesTestMixin, View):
     def get(self, request, pk, *args, **kwargs):
         item = MenuItem.objects.get(pk=pk)
+        if request.method == 'POST':
+            form = MenuForm(request.POST, instance=item)
+            if form.is_valid():
+                form.save()
+                return redirect('restaurant/edit-menu.html')
+        form = MenuForm(instance=item)
 
         context = {
-            'item': item
+            'form': form
         }
         return render(request, 'restaurant/edit-item.html', context)
 
