@@ -16,6 +16,9 @@
                     {% csrf_token %}
                     {{ form.as_p }}
                     <button type="submit" class="btn btn-primary btn-rounded">Update Menu Item</button>
+                    <a href="/delete/{{ item.id }}" class="btn btn-primary btn-rounded">
+                        <button>Delete</button>
+                    </a>
                 </form>
                 {% endif %}
             </div>
