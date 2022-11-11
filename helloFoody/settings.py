@@ -43,6 +43,11 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
+
+ACCOUNT_EMAIL_REQUIRED = True
+
+
+
 INSTALLED_APPS = [
 
     'django.contrib.admin',
