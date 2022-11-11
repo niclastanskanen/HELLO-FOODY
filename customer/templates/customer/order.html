@@ -2,174 +2,174 @@
 
 {% block content %}
 <!-- starters  -->
-<div class="container mb-5">
-    <div class="row justify-content-center mt-1">
-        <div class="col-md-12 col-sm-12 p-4">
-            <form method="POST">
-                {% csrf_token %}
-                <div class="pt-5">
-                    <h3>Starters</h3>
-                    {% for starter in starters %}
-                    <div class="row">
-                        <div class="col-md-2 col-sm-12">
-                            <img class="rounded" src="{{ starter.image.url }}" width="150" height="100" />
-                        </div>
-                        <div class="col-md-8 col-sm-12">
-                            <div class="row">
-                                <div class="form-group form-check">
-                                    <input type="checkbox" name="items[]" class="form-check-input"
-                                        value="{{ starter.pk }}">
-                                    <label class="form-check-label">{{ starter.name }}</label>
-                                </div>
-                                <p class="fw-bolder text-end">$ {{ starter.price }}</p>
+<section class="pb-5">
+    <div class="container">
+        <div class="row justify-content-center mt-1">
+            <div class="col-md-12 col-sm-12 p-4">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="pt-5">
+                        <h3>Starters</h3>
+                        {% for starter in starters %}
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <img class="rounded" src="{{ starter.image.url }}" width="250" height="200" />
                             </div>
-                            <p>{{ starter.description }}</p>
-                        </div>
-                    </div>
-                    <hr class="hr hr-blurry" />
-                    {% endfor %}
-                </div>
-                <!-- starters  -->
-                <!-- main -->
-                <div class="pt-5">
-                    <h3>Main</h3>
-                    {% for main in main %}
-                    <div class="row mt-4">
-                        <div class="col-md-2 col-sm-12">
-                            <img class="rounded" src="{{ main.image.url }}" width="150" height="100" />
-                        </div>
-                        <div class="col-md-8 col-sm-12">
-                            <div class="row">
-                                <div class="form-group form-check">
-                                    <input type="checkbox" name="items[]" class="form-check-input"
-                                        value="{{ main.pk }}">
-                                    <label class="form-check-label">{{ main.name }}</label>
+                            <div class="col-md-8 col-sm-12">
+                                <div class="row">
+                                    <div class="form-group form-check pt-3">
+                                        <input type="checkbox" name="items[]" class="form-check-input"
+                                            value="{{ starter.pk }}">
+                                        <label class="form-check-label">{{ starter.name }}</label>
+                                    </div>
+                                    <p class="fw-bolder text-end">$ {{ starter.price }}</p>
                                 </div>
-                                <p class="fw-bolder text-end">$ {{ main.price }}</p>
+                                <p>{{ starter.description }}</p>
                             </div>
-                            <p>{{ main.description }}</p>
                         </div>
+                        <hr class="hr hr-blurry" />
+                        {% endfor %}
                     </div>
-                    <hr class="hr hr-blurry" />
-                    {% endfor %}
-                </div>
-                <!-- main -->
-                <!-- desserts -->
-                <div class="pt-5">
-                    <h3>Desserts</h3>
-                    {% for dessert in desserts %}
-                    <div class="row mt-4">
-                        <div class="col-md-2 col-sm-12">
-                            <img class="rounded" src="{{ dessert.image.url }}" width="150" height="100" />
-                        </div>
-                        <div class="col-md-8 col-sm-12">
-                            <div class="row">
-                                <div class="form-group form-check">
-                                    <input type="checkbox" name="items[]" class="form-check-input"
-                                        value="{{ dessert.pk }}">
-                                    <label class="form-check-label">{{ dessert.name }}</label>
+                    <!-- starters  -->
+                    <!-- main -->
+                    <div class="pt-5">
+                        <h3>Main</h3>
+                        {% for main in main %}
+                        <div class="row mt-4">
+                            <div class="col-md-4 col-sm-12">
+                                <img class="rounded" src="{{ main.image.url }}" width="250" height="200" />
+                            </div>
+                            <div class="col-md-8 col-sm-12">
+                                <div class="row">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="items[]" class="form-check-input"
+                                            value="{{ main.pk }}">
+                                        <label class="form-check-label">{{ main.name }}</label>
+                                    </div>
+                                    <p class="fw-bolder text-end">$ {{ main.price }}</p>
                                 </div>
-                                <p class="fw-bolder text-end">$ {{ dessert.price }}</p>
+                                <p>{{ main.description }}</p>
                             </div>
-                            <p>{{ dessert.description }}</p>
                         </div>
+                        <hr class="hr hr-blurry" />
+                        {% endfor %}
                     </div>
-                    <hr class="hr hr-blurry" />
-                    {% endfor %}
-                </div>
-                <!-- desserts -->
-                <!-- drinks -->
-                <div class="pt-5">
-                    <h3>Drinks</h3>
-                    {% for drink in drinks %}
-                    <div class="row mt-4">
-                        <div class="col-md-2 col-sm-12">
-                            <img class="rounded" src="{{ drink.image.url }}" width="150" height="100" />
-                        </div>
-                        <div class="col-md-8 col-sm-12">
-                            <div class="row">
-                                <div class="form-group form-check">
-                                    <input type="checkbox" name="items[]" class="form-check-input"
-                                        value="{{ drink.pk }}">
-                                    <label class="form-check-label">{{ drink.name }}</label>
+                    <!-- main -->
+                    <!-- desserts -->
+                    <div class="pt-5">
+                        <h3>Desserts</h3>
+                        {% for dessert in desserts %}
+                        <div class="row mt-4">
+                            <div class="col-md-4 col-sm-12">
+                                <img class="rounded" src="{{ dessert.image.url }}" width="250" height="200" />
+                            </div>
+                            <div class="col-md-8 col-sm-12">
+                                <div class="row">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="items[]" class="form-check-input"
+                                            value="{{ dessert.pk }}">
+                                        <label class="form-check-label">{{ dessert.name }}</label>
+                                    </div>
+                                    <p class="fw-bolder text-end">$ {{ dessert.price }}</p>
                                 </div>
-                                <p class="fw-bolder text-end">$ {{ drink.price }}</p>
+                                <p>{{ dessert.description }}</p>
                             </div>
-                            <p>{{ drink.description }}</p>
+                        </div>
+                        <hr class="hr hr-blurry" />
+                        {% endfor %}
+                    </div>
+                    <!-- desserts -->
+                    <!-- drinks -->
+                    <div class="pt-5">
+                        <h3>Drinks</h3>
+                        {% for drink in drinks %}
+                        <div class="row mt-4">
+                            <div class="col-md-4 col-sm-12">
+                                <img class="rounded" src="{{ drink.image.url }}" width="250" height="200" />
+                            </div>
+                            <div class="col-md-8 col-sm-12">
+                                <div class="row">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" name="items[]" class="form-check-input"
+                                            value="{{ drink.pk }}">
+                                        <label class="form-check-label">{{ drink.name }}</label>
+                                    </div>
+                                    <p class="fw-bolder text-end">$ {{ drink.price }}</p>
+                                </div>
+                                <p>{{ drink.description }}</p>
+                            </div>
+                        </div>
+                        <hr class="hr hr-blurry" />
+                        {% endfor %}
+                    </div>
+                    <!-- drinks -->
+                    <!-- input fields  -->
+                    <label for="name">Full Name</label>
+                    <div class="form-outline mb-2">
+                        <input required type="text" id="form12" class="form-control" name="name" />
+                        <label class="form-label" for="form12">Your Name</label>
+                    </div>
+                    <label for="name">Email Address</label>
+                    <div class="form-outline mb-2">
+                        <input required type="email" id="typeEmail" class="form-control" name="email" />
+                        <label class="form-label" for="typeEmail">mail@example.com</label>
+                    </div>
+                    <label for="name">Street Address</label>
+                    <div class="form-outline mb-2">
+                        <input required type="text" id="form12" class="form-control" name="street" />
+                        <label class="form-label" for="form12">Street Address</label>
+                    </div>
+                    <div class="row pb-3">
+                        <div class="col-md-4 col-sm-12">
+                            <label for="name">Phone Number</label>
+                            <div class="form-outline">
+                                <input required type="text" id="form12" class="form-control" name="phone" />
+                                <label class="form-label" for="form12">Phone Number</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <label for="name">City</label>
+                            <div class="form-outline">
+                                <input required type="text" id="form12" class="form-control" name="city" />
+                                <label class="form-label" for="form12">City</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <label for="name">Zip Code</label>
+                            <div class="form-outline">
+                                <input required type="text" id="form12" class="form-control" name="zip" />
+                                <label class="form-label" for="form12">Zip Code</label>
+                            </div>
                         </div>
                     </div>
-                    <hr class="hr hr-blurry" />
-                    {% endfor %}
-                </div>
-                <!-- drinks -->
-                <!-- input fields  -->
-                <label for="name">Full Name</label>
-                <div class="form-outline mb-2">
-                    <input required type="text" id="form12" class="form-control" name="name" />
-                    <label class="form-label" for="form12">Your Name</label>
-                </div>
-                <label for="name">Email Address</label>
-                <div class="form-outline mb-2">
-                    <input required type="email" id="typeEmail" class="form-control" name="email" />
-                    <label class="form-label" for="typeEmail">mail@example.com</label>
-                </div>
-                <label for="name">Street Address</label>
-                <div class="form-outline mb-2">
-                    <input required type="text" id="form12" class="form-control" name="street" />
-                    <label class="form-label" for="form12">Street Address</label>
-                </div>
-                <div class="row pb-3">
-                    <div class="col-md-4 col-sm-12">
-                        <label for="name">Phone Number</label>
-                        <div class="form-outline">
-                            <input required type="text" id="form12" class="form-control" name="phone" />
-                            <label class="form-label" for="form12">Phone Number</label>
-                        </div>
+                    <div class="form-outline">
+                        <textarea class="form-control" id="textAreaExample" rows="4" name="message"></textarea>
+                        <label class="form-label" for="textAreaExample">Message</label>
                     </div>
-                    <div class="col-md-4 col-sm-12">
-                        <label for="name">City</label>
-                        <div class="form-outline">
-                            <input required type="text" id="form12" class="form-control" name="city" />
-                            <label class="form-label" for="form12">City</label>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                        <label for="name">Zip Code</label>
-                        <div class="form-outline">
-                            <input required type="text" id="form12" class="form-control" name="zip" />
-                            <label class="form-label" for="form12">Zip Code</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-outline">
-                    <textarea class="form-control" id="textAreaExample" rows="4" name="message"></textarea>
-                    <label class="form-label" for="textAreaExample">Message</label>
-                </div>
+            </div>
         </div>
-    </div>
-    <!-- input fields  -->
+        <!-- input fields  -->
 
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#submitModal">
-        Submit Order!
-    </button>
-    <!-- Modal -->
-    <div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="submitModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="submitModalLabel">Submit Your Order!</h5>
-                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Go Back</button>
-                    <button type="submit" class="btn btn-primary">Place Order!</button>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#submitModal">
+            Submit Order!
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="submitModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="submitModalLabel">Submit Your Order!</h5>
+                        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Go Back</button>
+                        <button type="submit" class="btn btn-primary">Place Order!</button>
+                    </div>
                 </div>
             </div>
         </div>
+        </form>
     </div>
-    </form>
-</div>
-</div>
-</div>
+</section>
 {% endblock content %}

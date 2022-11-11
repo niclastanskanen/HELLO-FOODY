@@ -3,15 +3,13 @@
 {% block content %}
 
 {% for restaurant in restaurants %}
-<div class="container pt-5">
-    <div class="container">
-        <div class="card">
-            <img src="{{ restaurant.image.url }}" class="card-img-top" />
-            <div class="card-body">
-                <h5 class="card-title">{{ restaurant.name }}</h5>
-                <p class="card-text">{{ restaurant.description }}</p>
-                <a href="{% url 'menu' %}" class="btn btn-primary btn-rounded">See Menu</a>
-            </div>
+<div class="container pt-5 pb-5">
+    <div class="card">
+        <img src="{{ restaurant.image.url }}" class="card-img-top" />
+        <div class="card-body">
+            <h5 class="card-title">{{ restaurant.name }}</h5>
+            <p class="card-text">{{ restaurant.description }}</p>
+            <a href="{% url 'menu' %}" class="btn btn-primary btn-rounded">See Menu</a>
         </div>
     </div>
 </div>
