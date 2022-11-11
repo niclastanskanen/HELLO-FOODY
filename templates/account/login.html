@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "account/base.html" %}
 
 {% load i18n %}
 {% load account socialaccount %}
@@ -21,7 +21,7 @@
               {% if redirect_field_value %}
               <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
               {% endif %}
-              <button class="btn btn-outline-primary btn-lg btn-block btn-rounded "
+              <button class="btn btn-outline-primary btn-lg btn-block btn-rounded"
                 type="submit">{% trans "Sign In" %}</button>
             </form>
             <div class="divider d-flex justify-content-center my-4">
