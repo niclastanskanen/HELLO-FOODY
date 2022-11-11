@@ -46,8 +46,6 @@ AUTHENTICATION_BACKENDS = [
 
 ACCOUNT_EMAIL_REQUIRED = True
 
-
-
 INSTALLED_APPS = [
 
     'django.contrib.admin',
