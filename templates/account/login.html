@@ -3,53 +3,41 @@
 {% load i18n %}
 {% load account socialaccount %}
 
-{% block head_title %}{% trans "Hello Foody Sign In" %}{% endblock %}
-
-{% load crispy_forms_tags %}
+{% block head_title %}{% trans "Hello Foody - Sign In" %}{% endblock %}
 
 {% block content %}
-<div class="row justify-content-center">
-  <div class="col-md-6 col-sm-12">
-    <h1>{% trans "Sign In" %}</h1>
+<section class="vh-100" style="background-color: #f8f9fa;">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
 
-    {% get_providers as socialaccount_providers %}
-    
-    {% if socialaccount_providers %}
-    <p>{% blocktrans with site.name as site_name %}Please sign in with one
-    of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
-    for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
-    
-    <div class="socialaccount_ballot">
-    
-      <ul class="socialaccount_providers">
-        {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-      </ul>
-    
-      <div class="login-or">{% trans 'or' %}</div>
-    
+            <h3 class="mb-2">{% trans "Sign In" %}</h3>
+            <p>{% blocktrans %}Welcome to Hello Foody.
+              <br>
+              <a class="link" href="{{ signup_url }}">Sign Up</a>
+              {% endblocktrans %}</p>
+            <div class="form-outline mb-4">
+              <form class="login" method="POST" action="{% url 'account_login' %}">
+                {% csrf_token %}
+                {{ form.as_p }}
+                {% if redirect_field_value %}
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                {% endif %}
+                <button class="btn btn-primary btn-lg btn-block btn-rounded" type="submit">{% trans "Sign In" %}</button>
+              </form>
+              <hr class="my-4">
+
+              <button class="btn btn-lg btn-block btn-primary btn-rounded" style="background-color: #dd4b39 !important;" type="submit"><i
+                  class="fab fa-google me-2"></i> Sign in with google</button>
+              <button class="btn btn-lg btn-block btn-primary btn-rounded mb-2" style="background-color: #3b5998 !important;" type="submit"><i
+                  class="fab fa-facebook-f me-2"></i>Sign in with facebook</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
-    {% include "socialaccount/snippets/login_extra.html" %}
-    
-    {% else %}
-    <p>{% blocktrans %}If you have not created an account yet, then please
-    <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
-    {% endif %}    
-  </div>
-</div>
-
-<div class="row justify-content-center">
-  <div class="col-md-6 col-sm-12">
-    <form class="login" method="POST" action="{% url 'account_login' %}">
-      {% csrf_token %}
-      {{ form|crispy }}
-      {% if redirect_field_value %}
-      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-      {% endif %}
-      <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-      <button class="btn btn-dark btn-block primaryAction" type="submit">{% trans "Sign In" %}</button>
-    </form>
-  </div>
-</div>
-
+</section>
 {% endblock %}
