@@ -1,5 +1,5 @@
 from django.urls import path
-from restaurant.views import Dashboard, OrderDetails, AddMenu, EditMenu, EditItem
+from restaurant.views import Dashboard, OrderDetails, AddMenu, EditMenu
 from . import views
 
 
@@ -8,6 +8,6 @@ urlpatterns = [
     path('orders/<int:pk>/', OrderDetails.as_view(), name='order-details'),
     path('add-menu/', AddMenu.as_view(), name='add-menu'),
     path('edit-menu/', EditMenu.as_view(), name='edit-menu'),
-    path('edit-item/<int:pk>/', EditItem.as_view(), name='edit-item'),
+    path('edit-item/<item_id>', views.edit_item, name='edit-item'),
     path('delete-item/<int:pk>/', views.delete_item, name='delete-item'),
 ]
