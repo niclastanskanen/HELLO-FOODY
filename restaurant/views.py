@@ -5,6 +5,8 @@ from django.utils.timezone import datetime
 from django.http import HttpResponseRedirect
 from customer.models import OrderModel, MenuItem
 from .forms import MenuForm
+from django.contrib import messages
+
 
 
 class Dashboard(LoginRequiredMixin, UserPassesTestMixin, View):
@@ -82,6 +84,9 @@ class AddMenu(LoginRequiredMixin, UserPassesTestMixin, View):
             form = MenuForm(request.POST, request.FILES)
             if form.is_valid():
                 form.save()
+                messages.success(request, "Item Added Successfully!")
+            else:
+                messages.error(request, 'Invalid Item')
 
             context = {
                 'form': form
@@ -126,4 +131,3 @@ class EditItem(LoginRequiredMixin, UserPassesTestMixin, View):
 
     def test_func(self):
         return self.request.user.groups.filter(name='Staff').exists()
-

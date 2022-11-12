@@ -90,7 +90,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    # 'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -182,7 +182,7 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-niclastanska-hellofoody-zbjlc6wf5qo.ws-eu75.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-niclastanska-hellofoody-zbjlc6wf5qo.ws-eu74.gitpod.io']
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
