@@ -84,7 +84,7 @@ class AddMenu(LoginRequiredMixin, UserPassesTestMixin, View):
             form = MenuForm(request.POST, request.FILES)
             if form.is_valid():
                 form.save()
-                messages.success(request, "Item Added Successfully!")
+                messages.success(request, 'Item Added Successfully!')
             else:
                 messages.error(request, 'Invalid Item')
 
