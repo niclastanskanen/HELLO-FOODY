@@ -9,4 +9,5 @@ urlpatterns = [
     path('add-menu/', AddMenu.as_view(), name='add-menu'),
     path('edit-menu/', EditMenu.as_view(), name='edit-menu'),
     path('edit-item/<int:pk>/', EditItem.as_view(), name='edit-item'),
+    path('delete-item/<int:pk>/', views.delete_item, name='delete-item'),
 ]

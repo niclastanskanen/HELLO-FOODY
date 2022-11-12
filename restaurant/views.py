@@ -143,3 +143,10 @@ class EditItem(LoginRequiredMixin, UserPassesTestMixin, View):
 
     def test_func(self):
         return self.request.user.groups.filter(name='Staff').exists()
+
+
+# Delete item in menu
+def delete_item(request, pk):
+    item = MenuItem.objects.get(pk=pk)
+    item.delete()
+    return render(request, 'restaurant/dashboard.html')
