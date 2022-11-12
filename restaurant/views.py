@@ -101,7 +101,7 @@ class AddMenu(LoginRequiredMixin, UserPassesTestMixin, View):
 # Edit restaurant menu
 class EditMenu(LoginRequiredMixin, UserPassesTestMixin, View):
     def get(self, request, *args, **kwargs):
-        menu_items = MenuItem.objects.all()
+        menu_items = MenuItem.objects.all().order_by('-id')
 
         context = {
             'menu_items': menu_items
