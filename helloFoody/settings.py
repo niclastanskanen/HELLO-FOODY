@@ -80,6 +80,12 @@ MESSAGE_TAGS = {
     messages.ERROR: 'alert-danger',
 }
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = '8ea47686b06a42'
+EMAIL_HOST_PASSWORD = 'ce3f49ce212da2'
+EMAIL_PORT = '2525'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -177,8 +183,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-niclastanska-hellofoody-zbjlc6wf5qo.ws-eu75.gitpod.io']
-
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
