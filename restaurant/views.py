@@ -119,8 +119,6 @@ def edit_item(request, item_id):
     if form.is_valid():
         form.save()
         messages.success(request, 'Item Updated Successfully!')
-    else:
-        messages.error(request, 'Invalid Item')
 
     context = {
         'item': item,
