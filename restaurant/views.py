@@ -126,16 +126,19 @@ class EditItem(LoginRequiredMixin, UserPassesTestMixin, View):
         return render(request, 'restaurant/edit-item.html', context)
 
     def post(self, request, *args, **kwargs):
+        form = MenuForm
         if request.method == 'POST':
-            form = MenuForm(request.POST, instance=item)
+            form = MenuForm(request.POST, request.FILES)
             if form.is_valid():
                 form.save()
-                return redirect('restaurant/edit-menu.html')
-        form = MenuForm(instance=item)
 
-        context = {
-            'form': form
-        }
+                messages.success(request, 'Item Added Successfully!')
+            else:
+                messages.error(request, 'Invalid Item')
+
+            context = {
+                'form': form
+                }
         return render(request, 'restaurant/edit-item.html', context)
 
     def test_func(self):
