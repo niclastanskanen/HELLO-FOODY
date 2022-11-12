@@ -117,6 +117,15 @@ class EditMenu(LoginRequiredMixin, UserPassesTestMixin, View):
 class EditItem(LoginRequiredMixin, UserPassesTestMixin, View):
     def get(self, request, pk, *args, **kwargs):
         item = MenuItem.objects.get(pk=pk)
+        form = MenuForm(instance=item)
+
+        context = {
+            'form': form
+        }
+
+        return render(request, 'restaurant/edit-item.html', context)
+
+    def post(self, request, *args, **kwargs):
         if request.method == 'POST':
             form = MenuForm(request.POST, instance=item)
             if form.is_valid():
