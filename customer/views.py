@@ -51,9 +51,9 @@ class MenuSearch(View):
         return render(request, 'customer/menu.html', context)
 
 
-class Login(View):
+class Profile(View):
     def get(self, request, *args, **kwargs):
-        return render(request, 'customer/login.html')
+        return render(request, 'customer/profile.html')
 
 
 class Cart(View):
