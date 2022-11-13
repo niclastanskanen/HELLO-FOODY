@@ -53,6 +53,7 @@ class MenuSearch(View):
 
 class Profile(View):
     def get(self, request, *args, **kwargs):
+
         return render(request, 'customer/profile.html')
 
 
