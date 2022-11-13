@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views import View
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from django.utils.timezone import datetime
-from django.http import HttpResponseRedirect
 from customer.models import OrderModel, MenuItem
 from .forms import MenuForm
 from django.contrib import messages
@@ -113,6 +112,8 @@ class EditMenu(LoginRequiredMixin, UserPassesTestMixin, View):
 
 
 # Edit item in menu
+# Follow along with Codemy.com
+# https://www.youtube.com/watch?v=jCM-m_3Ysqk&t=793s
 def edit_item(request, item_id):
     item = MenuItem.objects.get(pk=item_id)
     form = MenuForm(request.POST or None, instance=item)
@@ -129,6 +130,8 @@ def edit_item(request, item_id):
 
 
 # Delete item in menu
+# Follow along with codemy.com
+# https://www.youtube.com/watch?v=u1j-_kDc6g0&t=343s
 def delete_item(request, pk):
     item = MenuItem.objects.get(pk=pk)
     item.delete()
