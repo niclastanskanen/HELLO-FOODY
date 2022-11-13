@@ -118,6 +118,7 @@ TEMPLATES = [
     },
 ]
 
+
 WSGI_APPLICATION = 'helloFoody.wsgi.application'
 
 

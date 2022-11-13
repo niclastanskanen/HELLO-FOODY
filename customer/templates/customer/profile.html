@@ -54,18 +54,27 @@
             </div>
             <hr>
             <div class="row">
-              <div class="col-sm-3">
+              <div class="text-center">
+                <button type="button" class="btn btn-outline-primary btn-rounded">Update Profile <i
+                  class="fas fa-user-edit"></i></button>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="text-center">
                 <a href="{% url 'account_logout' %}">
-                  <button type="button" class="btn btn-primary btn-rounded" data-mdb-ripple-color="dark">Log
-                    Out</button></a>
+                  <button type="button" class="btn btn-primary btn-rounded">
+                    Log Out</button></a>
               </div>
             </div>
             {% else %}
             <a href="{% url 'account_login' %}">
-              <button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="dark">Sign
-                In</button></a>
+              <button type="button" class="btn btn-lg btn-block btn-outline-primary btn-rounded">
+                Sign In <i class="fas fa-sign-in-alt"></i></button></a>
+            <hr class="hr hr-blurry" />
             <a href="{% url 'account_signup' %}">
-              <button type="button" class="btn btn-primary btn-rounded">Sign Up</button>
+              <button type="button" class="btn btn-lg btn-block btn-primary btn-rounded">Sign Up <i
+                  class="fas fa-user-plus"></i></button>
             </a>
             {% endif %}
           </div>
@@ -74,14 +83,4 @@
     </div>
   </div>
 </section>
-{% for user in users %}
-<div class="container pt-5 pb-5">
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">{{ user.username }}</h5>
-            <p class="card-text">{{ user.name }}</p>
-        </div>
-    </div>
-</div>
-{% endfor %}
 {% endblock content %}
