@@ -2,7 +2,7 @@
 
 ![Am I Responsive](docs/readme/responsive.png)
 
-The live link can be found here -> [Hello Foody](https://ci-pp4-the-diplomat.herokuapp.com/)
+The live link can be found here -> [Hello Foody](https://hello-foody.herokuapp.com/)
 
 <hr>
 
@@ -188,6 +188,8 @@ Thank You page
 
 </details>
 
+<br>
+
 ### Colour Scheme
 
 The colors are simple but still have a sense of seriousness about them
@@ -198,7 +200,11 @@ The colors are simple but still have a sense of seriousness about them
 
 </details>
 
+<br>
+
 ### Typography
+
+Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Roboto?query=Roboto
 
 <hr>
 
