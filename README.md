@@ -380,23 +380,21 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 
 <hr>
 
-## Features
-
-<hr>
-
-## Validation
-
-<hr>
-
 ## Testing
 
-### Manual testing
+<hr>
 
-### Code Validation
+## Manual testing
 
-### Wave - Web Accessibility Evaluation Tool
+## Code Validation
+### HTML
+### CSS
+### Python
+### JavaScript
 
-### Lighthouse
+## Wave - Web Accessibility Evaluation Tool
+
+## Lighthouse
 
 <hr>
 
@@ -497,8 +495,6 @@ repository by using the following steps...
 - [MatHem](https://www.mathem.se/)
 - [UnSplash](https://unsplash.com/)
 
-
-
 ### Tools
 - [Am I Responsive](http://ami.responsivedesign.is/)
 - [Balsamiq](https://balsamiq.com/)
@@ -509,15 +505,16 @@ repository by using the following steps...
 - [Slogan Generator](https://www.shopify.com/tools/slogan-maker/show/LHBQ4Uv7Sl8=--dTENQtEIWXUvYN4p--AP6Rt%2FvizPPCBvpMr1HGAA==.html)
 - [Logo And Name](https://www.squadhelp.com/business-name-generator/word/Food%20Delivery?category_ids=633&max_length=&excluded_keywords=&name_types=)
 
-
 ### Coding Guide
 - [Update Edit Item - codemy.com youtube channel](https://www.youtube.com/watch?time_continue=1&v=jCM-m_3Ysqk&feature=emb_title)
 - [Delete Item - codemy.com youtube channel](https://www.youtube.com/watch?v=u1j-_kDc6g0&feature=emb_title)
 
-##### Back to [top](#table-of-contents)<hr>
+<hr>
 
 ## Acknowledgements
 
 ### Special thanks to the following:
 - Mitko, my mentor from Code Institute. Thank you for challenging me and putting me outside my comfort zone!
 - My class of August 2022 from Code Institute.
+
+##### Back to [top](#table-of-contents)<hr>
