@@ -11,7 +11,10 @@ The live link can be found here -> [Hello Foody](https://ci-pp4-the-diplomat.her
   - [User Goals](#user-goals)
   - [Restaurants Owner Goals](#restaurants-owner-goals)
   - [User Stories](#user-stories)
-
+    - [User](#user)
+    - [Restaurant Owner](#restaurants-owner)
+    - [Admin](#admin)
+  - [Agile Methodology](#agile-methodology)
 <hr>
 
 ## About
@@ -38,9 +41,13 @@ The Hello Foody delivery service lets you order food from restaurants, which is 
 
 ## User Stories
 
+**Due to the deadline for this project, there are still functions that have not been done. <br><br>Marked with *Upcoming updates* as below.**
+
 <hr>
 
 ## User
+
+Acceptance criteria for each user story can be viewed within the linked GitHub issue.
 
 ### Completed
 - As a user I can see different menu so that can order my food - *Must Have*
@@ -82,3 +89,23 @@ The Hello Foody delivery service lets you order food from restaurants, which is 
 - As a admin I can see overall statistics so that I have numbers to show new restaurants to work with me*Should Have*
 
 <hr>
+
+## Agile Methodology
+
+MoSCoW priority was applied to all user stories.
+
+
+<details><summary>User Stories</summary>
+![user-stories-close](docs/readme/user-stories-close.png)
+![kanban](ocs/readme/user-stories-open.png)
+</details>
+<br>
+GitHub Kanban was used to track user stories
+<details><summary>Kanban</summary>
+![kanban](docs/readme/kanban.png)
+</details>
+<br>
+Milestones function in GitHub, worked as Epics
+<details><summary>Epic</summary>
+![epic](docs/readme/milestone.png)
+</details>
