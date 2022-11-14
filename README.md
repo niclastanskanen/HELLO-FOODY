@@ -10,7 +10,9 @@ The live link can be found here -> [Hello Foody](https://ci-pp4-the-diplomat.her
   - [About](#about)
   - [User Goals](#user-goals)
   - [Restaurants Owner Goals](#restaurants-owner-goals)
+  - [User Stories](#user-stories)
 
+<hr>
 
 ### About
 
