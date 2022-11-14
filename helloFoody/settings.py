@@ -85,10 +85,12 @@ MESSAGE_TAGS = {
 }
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 EMAIL_HOST = 'smtp.mailtrap.io'
 EMAIL_HOST_USER = '8ea47686b06a42'
 EMAIL_HOST_PASSWORD = 'ce3f49ce212da2'
 EMAIL_PORT = '2525'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
