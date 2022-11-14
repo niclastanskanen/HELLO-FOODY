@@ -14,22 +14,71 @@ The live link can be found here -> [Hello Foody](https://ci-pp4-the-diplomat.her
 
 <hr>
 
-### About
+## About
 
 The Hello Foody delivery service lets you order food from restaurants, which is then delivered right to your door from Hello Foody.
 
 <hr>
 
-### User Goals
+## User Goals
 
 - Being able to order their favorite dishes from one place
 - users can view the entire menu and choose in peace
 - user can both order and pay directly on the website.
 
-### Restaurants Owner Goals
+<hr>
+
+## Restaurants Owner Goals
 
 - All orders arrive, no risk of missing a call
 - Orders are entered directly by customers, no risk of writing down the wrong order
 - Possible to communicate with guests about expected delivery time
+
+<hr>
+
+## User Stories
+
+<hr>
+
+## User
+
+### Completed
+- As a user I can see different menu so that can order my food - *Must Have*
+- As a user I can choose what payment to use so that I have more flexibility - *Must Have*
+- As a User I can sign up for an account so that I can use order food - *Must Have*
+- As a User, I can filter for food and restaurants so that I can find what I want to order faster - *Should Have*
+- As a User, I can search for food and restaurants so that I can find what I want to order - *Must Have*
+- As a User I can comment on my order so that I can specific details for my order - *Must Have*
+- As a User I can see my order on email so that can see what I purchase - *Must Have*
+
+### Upcoming updates
+- As a user I can see reviews and ratings so I can see what people think - *Should Have*
+- As a User I can put items in the shopping cart/Edit/Delete items so that I can see what I want to order before checkout - *Must Have*
+- As a User I can see my profile so that I can edit/delete my account - *Must Have*
+- As a User I can see previous orders so that I can track what I like to eat - *Should Have*
+- As a User I can add my favorites restaurants so that I can find my favorite restaurant fast - *Could Have*
+- As a User I can see my active orders so that I can see my order is process - *Must Have*
+- As a User I can write reviews so that the restaurant can see what I think, bad or good and improve - *Should Have*
+- As a User I can see estimated delivery time so that I see when my food is coming - *Must Have*
+
+
+## Restaurants Owner
+### Completed
+- As a restaurant owner I can see placed orders so that I can start cooking - *Must Have*
+- As a restaurant owner I can upload pictures to the menu so that customers can see what they order - *Must Have*
+- As a restaurant owner I can add/edit/remove items/prices from the menu so that customers can see - *Must Have*
+- As a restaurant owner I can see sales statistics so that I can plan my busniess - *Should Have*
+
+### Upcoming updates
+- As a restaurant owner I can edit my info about my restaurant so that customers can see up-to-date info - *Must Have*
+- As a restaurant owner I can see/approve reviews so that I can improve my restaurant - *Should Have*
+
+## Admin
+### Completed
+- As a admin I can add/edit/delete restaurant so that I can adapt the page to current restaurant customers - *Must Have*
+- As a admin I can edit users so that I can help users - *Must Have*
+
+### Upcoming updates
+- As a admin I can see overall statistics so that I have numbers to show new restaurants to work with me*Should Have*
 
 <hr>
