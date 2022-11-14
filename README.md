@@ -289,6 +289,11 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 <a href="https://gyazo.com/57a0e04bc0442f77dde05134b8e2e8be"><img src="https://i.gyazo.com/57a0e04bc0442f77dde05134b8e2e8be.gif" alt="Image from Gyazo" width="492"/></a>
 </details>
 
+<details><summary>Email Confirmation</summary>
+
+![Email Confirmation](docs/readme/features/features-email-confirmation.png)
+</details>
+
 <br>
 
 ### Order Pay Confirmation
@@ -338,6 +343,10 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 <details><summary>See Video Gif</summary>
 <a href="https://gyazo.com/a003f396dcfe0db9c93e3da5e2f4b525"><img src="https://i.gyazo.com/a003f396dcfe0db9c93e3da5e2f4b525.gif" alt="Image from Gyazo" width="1000"/></a>
 </details>
+
+<hr>
+
+##### Back to [top](#table-of-contents)
 
 <hr>
 
