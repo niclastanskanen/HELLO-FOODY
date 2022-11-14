@@ -19,6 +19,7 @@ The live link can be found here -> [Hello Foody](https://hello-foody.herokuapp.c
     - [Wireframes](#wireframes)
     - [Colour Scheme](#colour-scheme)
     - [Typography](#typography)
+    - [Database Schema](#database-schema)
   - [Features](#features)
   - [Technologies Used](#technologies-used)
   - [Features](#features)
@@ -206,9 +207,121 @@ The colors are simple but still have a sense of seriousness about them
 
 Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Roboto?query=Roboto
 
+<br>
+
+## Database Schema
+ IMAGE <------>
+
 <hr>
 
 ## Features
+
+## User
+
+### Home Page
+
+<details><summary>See feature images</summary>
+
+</details>
+
+<br>
+
+### Logo & Navigation
+
+<details><summary>See feature images</summary>
+
+</details>
+
+<br>
+
+### Footer
+
+<details><summary>See feature images</summary>
+
+</details>
+
+<br>
+
+### Restaurants
+
+<details><summary>See feature images</summary>
+
+</details>
+
+<br>
+
+### Search / Menu
+
+<details><summary>See Video Gif</summary>
+<a href="https://gyazo.com/e13dffc7878f7b943ec9660732524ff3"><img src="https://i.gyazo.com/e13dffc7878f7b943ec9660732524ff3.gif" alt="Image from Gyazo" width="490"/></a>
+</details>
+
+<br>
+
+### Cart
+
+<details><summary>See feature images</summary>
+
+</details>
+
+<br>
+
+### Order
+
+<details><summary>See feature images</summary>
+
+</details>
+
+<br>
+
+### Order Confirmation
+
+<details><summary>See Video Gif</summary>
+<a href="https://gyazo.com/57a0e04bc0442f77dde05134b8e2e8be"><img src="https://i.gyazo.com/57a0e04bc0442f77dde05134b8e2e8be.gif" alt="Image from Gyazo" width="492"/></a>
+</details>
+
+<br>
+
+### Order Pay Confirmation
+
+<details><summary>See Video Gif</summary>
+<a href="https://gyazo.com/b759a04697ab7974e3b64743e506745a"><img src="https://i.gyazo.com/b759a04697ab7974e3b64743e506745a.gif" alt="Image from Gyazo" width="1000"/></a>
+</details>
+
+<br>
+
+### Profile
+
+## Restaurant Owner
+
+### Dashboard
+
+<details><summary>See Video Gif</summary>
+<a href="https://gyazo.com/a4814b232d371cdffa08176a6df61b08"><img src="https://i.gyazo.com/a4814b232d371cdffa08176a6df61b08.gif" alt="Image from Gyazo" width="1000"/></a>
+</details>
+
+<br>
+
+### Add Item To Menu
+
+<details><summary>See Video Gif</summary>
+<a href="https://gyazo.com/2c6564cec599ce3cd75f12eaefc11670"><img src="https://i.gyazo.com/2c6564cec599ce3cd75f12eaefc11670.gif" alt="Image from Gyazo" width="1000"/></a>
+</details>
+
+<br>
+
+### Edit Menu
+
+<details><summary>See Video Gif</summary>
+<a href="https://gyazo.com/412ba32ad6dd09783c96c1dfe17b1090"><img src="https://i.gyazo.com/412ba32ad6dd09783c96c1dfe17b1090.gif" alt="Image from Gyazo" width="1000"/></a>
+</details>
+
+<br>
+
+### Delete Item
+<details><summary>See Video Gif</summary>
+<a href="https://gyazo.com/a003f396dcfe0db9c93e3da5e2f4b525"><img src="https://i.gyazo.com/a003f396dcfe0db9c93e3da5e2f4b525.gif" alt="Image from Gyazo" width="1000"/></a>
+</details>
 
 <hr>
 
