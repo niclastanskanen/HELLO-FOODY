@@ -368,18 +368,15 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 - [Django Allauth](https://pypi.org/project/django-allauth/0.51.0/)
 - [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
 - [Cloudinary](https://cloudinary.com/)
-- [Favicon.io](https://favicon.io)
 - [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
 - [GitHub](https://github.com/)
 - [Heroku Platform](https://id.heroku.com/login)
 - [ElephantSQL](https://www.elephantsql.com/)
 - [jQuery](https://jquery.com)
 - [Mailtrap](https://mailtrap.io)
-- [Am I Responsive](http://ami.responsivedesign.is/)
-- [Balsamiq](https://balsamiq.com/)
-- [Canva](https://www.canva.com/)
-- [Font Awesome](https://fontawesome.com/)
-- [Google Fonts](https://fonts.google.com/)
+- [Paypal API With Ajax](https://developer.paypal.com/docs/archive/checkout/integrate/)
+- [Django CSRF Protection](https://docs.djangoproject.com/en/4.1/howto/csrf/)
+- [Django DateTime](https://docs.djangoproject.com/en/4.1/topics/i18n/timezones/)
 
 <hr>
 
@@ -491,3 +488,36 @@ repository by using the following steps...
 <hr>
 
 ## Credits
+
+### Images & Icons
+- [Canva](https://www.canva.com/)
+- [Favicon.io](https://favicon.io)
+- [Font Awesome](https://fontawesome.com/)
+- [Freepik](https://www.freepik.com/)
+- [MatHem](https://www.mathem.se/)
+- [UnSplash](https://unsplash.com/)
+
+
+
+### Tools
+- [Am I Responsive](http://ami.responsivedesign.is/)
+- [Balsamiq](https://balsamiq.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Colour Scheme](https://coolors.co/)
+- [Image Compressor](https://business-tools.clickfunnels.com/business-tools/compress-image)
+- [Slogan Generator](https://www.shopify.com/tools/slogan-maker/show/LHBQ4Uv7Sl8=--dTENQtEIWXUvYN4p--AP6Rt%2FvizPPCBvpMr1HGAA==.html)
+- [Logo And Name](https://www.squadhelp.com/business-name-generator/word/Food%20Delivery?category_ids=633&max_length=&excluded_keywords=&name_types=)
+
+
+### Coding Guide
+- [Update Edit Item - codemy.com youtube channel](https://www.youtube.com/watch?time_continue=1&v=jCM-m_3Ysqk&feature=emb_title)
+- [Delete Item - codemy.com youtube channel](https://www.youtube.com/watch?v=u1j-_kDc6g0&feature=emb_title)
+
+##### Back to [top](#table-of-contents)<hr>
+
+## Acknowledgements
+
+### Special thanks to the following:
+- Mitko, my mentor from Code Institute. Thank you for challenging me and putting me outside my comfort zone!
+- My class of August 2022 from Code Institute.
