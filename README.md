@@ -138,6 +138,8 @@ Milestones function in GitHub, worked as Epics
 
 ## Design
 
+This site is designed to be viewed on mobile devices. You are taken directly to an app from the website, so the design is similar to an app.
+
 ### Wireframes
 
 <details><summary>Desktop</summary>
@@ -160,11 +162,41 @@ Thank You page
 </details>
 <details><summary>Mobile</summary>
 
+First Page
 
+![First Page](docs/readme/wireframes/wireframe-mobile-firstpage.png)
+
+Restaurants
+
+![Restaurants](docs/readme/wireframes/wireframe-mobile-restaurants.png)
+
+Search
+
+![Search](docs/readme/wireframes/wireframe-mobile-search.png)
+
+Login
+
+![Login](docs/readme/wireframes/wireframe-mobile-login.png)
+
+Cart
+
+![Cart](docs/readme/wireframes/wireframe-mobile-cart.png)
+
+Thank You page
+
+![Thank You](docs/readme/wireframes/wireframe-mobile-thank-you.png)
 
 </details>
 
 ### Colour Scheme
+
+The colors are simple but still have a sense of seriousness about them
+
+<details><summary>Image</summary>
+
+![Colour Scheme](docs/readme/colour-scheme.png)
+
+</details>
 
 ### Typography
 
