@@ -352,6 +352,36 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 
 ## Technologies Used
 
+### Languages & Frameworks
+
+- HTML
+- CSS
+- Javascript
+- Python
+- Django
+
+
+### Libraries & Tools
+
+- [Bootstrap v5.2](https://getbootstrap.com/)
+- [Crispy Bootstrap](https://github.com/django-crispy-forms/crispy-bootstrap5)
+- [MDBootstrap](https://mdbootstrap.com/)
+- [Django Allauth](https://pypi.org/project/django-allauth/0.51.0/)
+- [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+- [Cloudinary](https://cloudinary.com/)
+- [Favicon.io](https://favicon.io)
+- [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
+- [GitHub](https://github.com/)
+- [Heroku Platform](https://id.heroku.com/login)
+- [ElephantSQL](https://www.elephantsql.com/)
+- [jQuery](https://jquery.com)
+- [Mailtrap](https://mailtrap.io)
+- [Am I Responsive](http://ami.responsivedesign.is/)
+- [Balsamiq](https://balsamiq.com/)
+- [Canva](https://www.canva.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/)
+
 <hr>
 
 ## Features
