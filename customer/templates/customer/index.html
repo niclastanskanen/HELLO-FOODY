@@ -13,8 +13,8 @@
                 <form method="GET" action="{% url 'menu-search' %}">
                     <div class="row">
                         <div class="col-12 col-md-9 mb-2 mb-md-0">
-                            <input class="form-control form-control-lg" type="text" name="q" aria-label="Search" value="{{ request.GET.q }}"
-                                placeholder="Search for specific food.." />
+                            <input class="form-control form-control-lg" type="text" name="q" aria-label="Search"
+                                value="{{ request.GET.q }}" placeholder="Search for specific food.." />
                         </div>
                         <div class="col-12 col-md-3">
                             <button class="btn btn-primary btn-rounded btn-lg" type="submit">Search</button>
@@ -127,20 +127,22 @@
                     time possible.</p>
             </div>
             <div class="col-md-6">
-                <button class="btn btn-outline-primary btn-rounded btn-icon-text">
-                    <i class="fa-brands fa-apple fa-2x"></i>
-                    <span class="d-inline-block text-left">
-                        <small class="font-weight-light d-block">Available on the</small>
-                        App Store
-                    </span>
-                </button>
-                <button class="btn btn-outline-primary btn-rounded btn-icon-text">
-                    <i class="fa-brands fa-android fa-2x"></i>
-                    <span class="d-inline-block text-left">
-                        <small class="font-weight-light d-block">Get it on the</small>
-                        Google Play
-                    </span>
-                </button>
+                <a href="https://www.apple.com/app-store/" target="_blank">
+                    <button class="btn btn-outline-primary btn-rounded btn-icon-text">
+                        <i class="fa-brands fa-apple fa-2x"></i>
+                        <span class="d-inline-block text-left">
+                            <small class="font-weight-light d-block">Available on the</small>
+                            App Store
+                        </span>
+                    </button></a>
+                <a href="https://play.google.com/" target="_blank">
+                    <button class="btn btn-outline-primary btn-rounded btn-icon-text">
+                        <i class="fa-brands fa-android fa-2x"></i>
+                        <span class="d-inline-block text-left">
+                            <small class="font-weight-light d-block">Get it on the</small>
+                            Google Play
+                        </span>
+                    </button></a>
             </div>
         </div>
     </div>
