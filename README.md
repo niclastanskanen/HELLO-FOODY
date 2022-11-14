@@ -222,6 +222,8 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 
 <details><summary>See feature images</summary>
 
+![Home Desktop](docs/readme/features/features-home.png)
+![Home Mobile](docs/readme/features/features-mobile-home.png)
 </details>
 
 <br>
@@ -230,6 +232,7 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 
 <details><summary>See feature images</summary>
 
+![Nav](docs/readme/features/features-logo-nav.png)
 </details>
 
 <br>
@@ -238,6 +241,7 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 
 <details><summary>See feature images</summary>
 
+![Footer](docs/readme/features/features-footer.png)
 </details>
 
 <br>
@@ -246,6 +250,8 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 
 <details><summary>See feature images</summary>
 
+![Restaurants](docs/readme/features/features-restaurants.png)
+![Restaurants Mobile](docs/readme/features/features-mobile-restaurants.png)
 </details>
 
 <br>
@@ -262,6 +268,7 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 
 <details><summary>See feature images</summary>
 
+![Cart Mobile](docs/readme/features/features-mobile-cart.png)
 </details>
 
 <br>
@@ -270,6 +277,8 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 
 <details><summary>See feature images</summary>
 
+![Order](docs/readme/features/features-order)
+![Order Mobile](docs/readme/features/features-mobile-order.png)
 </details>
 
 <br>
@@ -291,6 +300,13 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 <br>
 
 ### Profile
+
+<details><summary>See feature images</summary>
+
+![Profile Mobile](docs/readme/features/features-mobile-profile.png)
+</details>
+
+<br>
 
 ## Restaurant Owner
 
