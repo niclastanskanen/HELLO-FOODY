@@ -15,6 +15,21 @@ The live link can be found here -> [Hello Foody](https://ci-pp4-the-diplomat.her
     - [Restaurant Owner](#restaurants-owner)
     - [Admin](#admin)
   - [Agile Methodology](#agile-methodology)
+  - [Design](#design)
+    - [Wireframes](#wireframes)
+    - [Colour Scheme](#colour-scheme)
+    - [Typography](#typography)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Features](#features)
+  - [Testing](#testing)
+    - [Manual Testing](#manual-testing)
+    - [Code Validation](#code-validation)
+    - [Wave](#wave---web-accessibility-evaluation-tool)
+    - [Lighthouse](#lighthouse)
+  - [Deployment](#deployment)
+  - [Credits](#credits)
+
 <hr>
 
 ## About
@@ -96,16 +111,95 @@ MoSCoW priority was applied to all user stories.
 
 
 <details><summary>User Stories</summary>
+
 ![user-stories-close](docs/readme/user-stories-close.png)
-![kanban](ocs/readme/user-stories-open.png)
+
+![kanban](docs/readme/user-stories-open.png)
+
 </details>
 <br>
 GitHub Kanban was used to track user stories
 <details><summary>Kanban</summary>
+
 ![kanban](docs/readme/kanban.png)
 </details>
 <br>
 Milestones function in GitHub, worked as Epics
 <details><summary>Epic</summary>
+
 ![epic](docs/readme/milestone.png)
 </details>
+
+<hr>
+
+##### Back to [top](#table-of-contents)
+
+<hr>
+
+## Design
+
+### Wireframes
+
+<details><summary>Desktop</summary>
+
+First page
+
+![Firstpage](docs/readme/wireframes/wireframe-firstpage.png)
+
+Search page
+
+![Search](docs/readme/wireframes/wireframe-search.png)
+
+Checkout page
+
+![Checkout](docs/readme/wireframes/wireframe-checkout.png)
+
+Thank You page
+
+![Thank You](docs/readme/wireframes/wireframe-thank-you.png)
+</details>
+<details><summary>Mobile</summary>
+
+
+
+</details>
+
+### Colour Scheme
+
+### Typography
+
+<hr>
+
+## Features
+
+<hr>
+
+## Technologies Used
+
+<hr>
+
+## Features
+
+<hr>
+
+## Validation
+
+<hr>
+
+## Testing
+
+### Manual testing
+
+### Code Validation
+
+### Wave - Web Accessibility Evaluation Tool
+
+### Lighthouse
+
+<hr>
+
+## Deployment
+
+<hr>
+
+## Credits
