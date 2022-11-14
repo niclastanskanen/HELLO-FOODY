@@ -22,7 +22,6 @@ The live link can be found here -> [Hello Foody](https://hello-foody.herokuapp.c
     - [Database Schema](#database-schema)
   - [Features](#features)
   - [Technologies Used](#technologies-used)
-  - [Features](#features)
   - [Testing](#testing)
     - [Manual Testing](#manual-testing)
     - [Code Validation](#code-validation)
@@ -405,6 +404,89 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 <hr>
 
 ## Deployment
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on
+our GitHub account to view and/or make changes without affecting the original
+repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub
+   Repository](https://github.com/niclastanskanen/HELLO-FOODY)
+1. At the top of the Repository (not top of page) just above the "Settings"
+   Button on the menu, locate the "Fork" Button.
+1. Click the button (not the number to the right) and you should now have a copy
+   of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+**NOTE**: It is a requirement of the is project that you have Python version 3.8 or higher installed locally.
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/niclastanskanen/HELLO-FOODY).
+1. Under the repository name, click "Code".
+1. To clone the repository using HTTPS, under "HTTPS", copy the link.
+1. Open your local terminal with git installed
+1. Change the current working directory to the location where you want the cloned directory to be created.
+1. Type `git clone`, and then paste the URL you copied in Step 3.
+
+    ```console
+    ~$ git clone https://github.com/niclastanskanen/HELLO-FOODY
+    ```
+
+1. Press Enter. Your local clone will be created.
+
+    ```console
+    $ git clone https://github.com/niclastanskanen/HELLO-FOODY
+    > Cloning into `test-dir`...
+    > remote: Counting objects: 10, done.
+    > remote: Compressing objects: 100% (8/8), done.
+    > remove: Total 10 (delta 1), reused 10 (delta 1)
+    > Unpacking objects: 100% (10/10), done.
+    ```
+
+    [Click here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) for a more detailed explanation of the process above with pictures.
+
+1. Change the current working directory to the cloned project folder (this will be a child directory in the location you cloned the project).
+
+1. It is recommended to use a virtual environment during development ([learn more about virtual environments](https://realpython.com/python-virtual-environments-a-primer/)). If you would prefer not to use on please skip the following steps:
+    1. Create a virtual environment in the projects working directory by entering the following command in the same terminal window used for the steps above `python3 -m venv .venv`.
+    1. Before use, the virtual environment will need to be activated using the command `source .venv/bin/activate` in the same terminal window used previously.
+1. Packages required by the project can now using the command `pip install -r requirements.txt`
+1. In the cloned directory, rename the file `.env-example` to `.env` and populate it with the information required.
+1. Make django migrations using the command `./manage.py migrate`.
+
+### Deploying with Heroku
+
+**NOTE**: It is a prerequisite of deployment to Heroku that you already have access to the following:
+
+- A Cloudinary account, create one for free at [https://cloudinary.com](https://cloudinary.com).
+- An account with an email service that can be used to send confirmations and notification to users.
+
+**NOTE**: It is assumed you have followed all deployment instructions listed in this readme starting with the section titled 'Forking the GitHub Repository'.
+
+1. Log in to [Heroku](https://www.heroku.com/) and if not taken there automatically, navigate to your personal app dashboard.
+1. At the top of the page locate the 'New' drop down, click it and then select 'Create new app'.
+1. Give your application a unique name, select a region appropriate to your location and click the 'Create app' button.
+1. Your app should now be created, so from the menu towards the top of the page select the 'Resources' section.
+1. Search for 'Heroku Postgres' under the Add-ons section and add it.
+1. From the menu towards the top of the page select the 'Settings' section and lick 'Reveal Config Vars' in the Config vars section. Enter the following key / value pairings:
+    1. Key as `ALLOWED_HOSTS` and the value as the name of you project with '.herokuapp.com' appended to the end e.g.  `example-app.herokuapp.com`. Click the Add button.
+    1. Key as `CLOUDINARY_URL` and the value as your cloudinary API Environment variable e.g. `cloudinary://**************:**************@*********`. Click the Add button.
+    1. Key as `EMAIL_HOST_PASSWORD` and the value as the password or value provided by your email service of choice. Click the Add button.
+    1. Key as `EMAIL_HOST_USER` and the value as the the email address or value provided by your email service of choice. Click the Add button.
+    1. Key as `SECRET_KEY` and the value as a complex string which will be used to provide cryptographic signing. Click the Add button.
+    1. Ensure the key `DATABASE_URL` is already populated. This should have been created automatically by Heroku.
+    1. The `DATABASE_URL` should be copied into your local `.env`, created during the cloning process.
+
+1. Running migrations on the remote database
+    1. Open your local terminal and change the current working directory to that of the project folder.
+    1. Make django migrations using the command `./manage.py migrate`.
+1. Navigate to the 'Deploy' page using the menu towards the top of the page.
+1. Select 'GitHub' from the 'Deployment method' section and you will be prompted to 'Connect to GitHub'.
+1. Once connected to your GitHub account you will be able to search for your repository which contains the forked 'Hello-Foody' repository.
+1. Once the repository is found click 'Connect'.
+1. At the bottom of the page find the section named 'Manual deploy', select the 'main' branch in the drop down and click the 'Deploy' button.
+1. Once deployment is complete, click the 'View' button to load the URL of the deployed application.
 
 <hr>
 
