@@ -3,18 +3,15 @@
     <div class="container">
         <a class="navbar-brand me-2" href="{% url 'index' %}">
             <img src="{% static 'images/logo.png' %}" height="100" width="200" alt="Hello Foody Logo" loading="lazy"
-                style="margin-top: -1px;" />
+                style="margin-top: -1px;">
         </a>
         <div class="d-flex align-items-center d-lg-block">
-            <a href="{% url 'add-menu' %}">
-                <button type="button" class="btn btn-outline-primary btn-rounded px-3 me-2"
-                    data-mdb-ripple-color="dark">Add Item To Menu</button></a>
-            <a href="{% url 'edit-menu' %}">
-                <button type="button" class="btn btn-outline-primary btn-rounded px-3 me-2"
-                    data-mdb-ripple-color="dark">Edit Menu</button></a>
-            <a href="{% url 'account_logout' %}">
-                <button type="button" class="btn btn-primary btn-rounded px-3 me-2"
-                    data-mdb-ripple-color="dark">Log Out</button></a>
+            <a href="{% url 'add-menu' %}" class="btn btn-outline-primary btn-rounded px-3 me-2">
+                Add Item To Menu</a>
+            <a href="{% url 'edit-menu' %}" class="btn btn-outline-primary btn-rounded px-3 me-2">
+                Edit Menu</a>
+            <a href="{% url 'account_logout' %}" class="btn btn-primary btn-rounded px-3 me-2">
+                Log Out</a>
         </div>
     </div>
 </nav>
