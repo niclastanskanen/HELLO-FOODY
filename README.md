@@ -444,7 +444,7 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 | See 'Earnings Annual' in dashboard | Calculated annual revenue | **NOT** working as expected |
 | See 'Todays total orders' in dashboard | Calculated todays total orders | **Working** as expectedd |
 | See all active orders | Automatic popup in filter after order submitted | **Working** as expectedd |
-| See order is paid or not paid | Automatic filled in is paid? Checkmark/Cross | **Working** as expectedd |
+| See order is paid or not paid | Automatic filled in is paid? Checkmark/X | **Working** as expectedd |
 | See order historic | Search order historic | **NOT** working as expected |
 | Click on the 'Details' link in order info | Redirect to order details | **Working** as expectedd |
 | See details about customer | Prefilled with customer details | **Working** as expectedd |
@@ -460,23 +460,7 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 | Click on the 'Delete' button in edit menu | Popup confirmation before delete | **Working** as expectedd |
 | Click on the 'Ok' popup delete "are you sure?"  | Delete item from menu | **Working** as expectedd |
 
-
-
-
-4. As a User I can view the opening hours and contact details so that I know when the business is open and how to contact them via email, phone and socials
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
-| Click on the 'Contact Us' link in the navigation bar, scroll to bottom of page | Find contact details and opening hours | Works as expected |
-
-<details><summary></summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-06.PNG">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-13.PNG">
-
-</details>
-
-
-
+<hr>
 
 ## Code Validation
 ### HTML
