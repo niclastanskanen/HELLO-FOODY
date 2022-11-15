@@ -32,6 +32,7 @@ from customer.views import (
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
+    path('contact', views.contact, name='contact'),
     path('restaurant/', include('restaurant.urls')),
     path('', Index.as_view(), name='index'),
     path('restaurants/', Restaurants.as_view(), name='restaurants'),
