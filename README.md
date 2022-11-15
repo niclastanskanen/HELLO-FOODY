@@ -282,7 +282,7 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 
 <details><summary>See feature images</summary>
 
-![Order](docs/readme/features/features-order)
+![Order](docs/readme/features/features-order.png)
 ![Order Mobile](docs/readme/features/features-mobile-order.png)
 </details>
 
