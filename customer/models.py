@@ -20,7 +20,8 @@ class MenuItem(models.Model):
     image = CloudinaryField('menu_images')
     price = models.DecimalField(max_digits=5, decimal_places=2)
     category = models.ManyToManyField('Category', related_name='item')
-    restaurant = models.ManyToManyField('Restaurant', related_name='restaurant')
+    restaurant = models.ManyToManyField(
+        'Restaurant', related_name='restaurant')
 
     def __str__(self):
         return self.name

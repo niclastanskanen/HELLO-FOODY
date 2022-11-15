@@ -129,7 +129,8 @@ class Order(View):
         order.items.add(*item_ids)
 
         # After everything is done, send confirmation email to the user
-        body = ('Thank you for your order! Your food is being made and will be delivered soon!\n'
+        body = ('Thank you for your order!\n'
+                'Your food is being made and will be delivered soon!\n'
                 f'Your total: {price}\n'
                 'Thank you again for your order!')
 

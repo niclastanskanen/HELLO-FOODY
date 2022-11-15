@@ -7,7 +7,14 @@ from customer.models import MenuItem
 class MenuForm(ModelForm):
     class Meta:
         model = MenuItem
-        fields = ('name', 'description', 'image', 'price', 'category', 'restaurant')
+        fields = (
+            'name',
+            'description',
+            'image',
+            'price',
+            'category',
+            'restaurant',
+            )
         labels = {
             'name': 'Item Name',
             'description': 'Description',
@@ -18,10 +25,16 @@ class MenuForm(ModelForm):
         }
 
         widgets = {
-            'name': forms.TextInput(attrs={'class': 'form-control'}),
-            'description': forms.Textarea(attrs={'class': 'form-control'}),
-            'image': forms.FileInput(attrs={'class': 'form-control', 'id': 'customFile'}),
-            'price': forms.NumberInput(attrs={'class': 'form-control'}),
-            'category': forms.SelectMultiple(attrs={'class': 'form-control'}),
-            'restaurant': forms.SelectMultiple(attrs={'class': 'form-control'}),
+            'name': forms.TextInput(attrs={
+                'class': 'form-control'}),
+            'description': forms.Textarea(attrs={
+                'class': 'form-control'}),
+            'image': forms.FileInput(attrs={
+                'class': 'form-control', 'id': 'customFile'}),
+            'price': forms.NumberInput(attrs={
+                'class': 'form-control'}),
+            'category': forms.SelectMultiple(attrs={
+                'class': 'form-control'}),
+            'restaurant': forms.SelectMultiple(attrs={
+                'class': 'form-control'}),
         }

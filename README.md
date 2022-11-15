@@ -383,6 +383,8 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 - [Paypal API With Ajax](https://developer.paypal.com/docs/archive/checkout/integrate/)
 - [Django CSRF Protection](https://docs.djangoproject.com/en/4.1/howto/csrf/)
 - [Django DateTime](https://docs.djangoproject.com/en/4.1/topics/i18n/timezones/)
+- [Django ModelForms](https://docs.djangoproject.com/en/4.1/topics/forms/modelforms/)
+- [PyCodeStyle](https://pypi.org/project/pycodestyle/)
 
 <hr>
 
@@ -394,11 +396,35 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 
 ## Code Validation
 ### HTML
-### CSS
-### Python
-### JavaScript
+
+<br>
+
+### CSS Validation
+
+<details><summary>W3C Jigsaw CSS Validation Service</summary>
+
+![CSS Validation](docs/readme/validation/css/validation-css.png)
+</details>
+
+<br>
+
+### Python PEP8 Validation
+<details><Summary>Customer</Summary>
+<a href="https://gyazo.com/179674cf290680c06e56822ddd28a7e5"><img src="https://i.gyazo.com/179674cf290680c06e56822ddd28a7e5.gif" alt="Image from Gyazo" width="1000"/></a>
+</details>
+<details><Summary>helloFoody</Summary>
+helloFoody
+<a href="https://gyazo.com/68c84ec4785b2aa361793530d0688e5d"><img src="https://i.gyazo.com/68c84ec4785b2aa361793530d0688e5d.gif" alt="Image from Gyazo" width="1000"/></a>
+</details>
+<details><Summary>Restaurant</Summary>
+<a href="https://gyazo.com/7d5896b2587a051db5f0efe69c271ac1"><img src="https://i.gyazo.com/7d5896b2587a051db5f0efe69c271ac1.gif" alt="Image from Gyazo" width="1000"/></a>
+</details>
+
+<br>
 
 ## Wave - Web Accessibility Evaluation Tool
+
+<br>
 
 ## Lighthouse
 
