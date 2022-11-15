@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="ms-5">
-    <td><a href="{% url 'dashboard' %}"><i class="fas fa-arrow-left pt-3 ml-5"> Go Back</i></a></td>
+    <a href="{% url 'dashboard' %}"><i class="fas fa-arrow-left pt-3 ml-5"> Go Back</i></a>
 </div>
 <div class="container pt-3">
     <div class="card">
@@ -10,7 +10,7 @@
             <div class="card-header py-3">
                 <p class="text-primary m-0 fw-bold">Edit Menu</p>
             </div>
-            <div id="dataTable" class="table-responsive table mt-2" role="grid" aria-describedby="dataTable_info">
+            <div class="table-responsive table mt-2" role="grid">
                 <table id="dataTable" class="table my-0">
                     <thead>
                         <tr>
