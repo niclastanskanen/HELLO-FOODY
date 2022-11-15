@@ -393,6 +393,91 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 
 ## Manual testing
 
+1. Customer
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'Logo' link in the navigation bar | redirect to homepage | **Working** as expected |
+| Click on the 'Sign Up' link in the navigation bar | Sign up page will load| **Working** as expected |
+| Click on the 'Sign In' link in the navigation bar | Login page will load | **Working** as expected |
+| Click on the 'Log out' link in the navigation bar | Log out page will load | **Working** as expected |
+| Click on the 'Profile' link in the navigation bar | Login page will load | **Working** as expected |
+| Click on the 'Profile' link in the navigation bar | See profile details when logged in | **NOT** working as expected |
+| Click on the 'Restaurants' link in the navigation bar | Restaurants page will load | **Working** as expected |
+| Click on the 'See menu' button in Restaurant | Menu for specific restaurant will show | **NOT** working as expected |
+| Click on the 'Search' link in the navigation bar | Menu page will load | **Working** as expected |
+| Write on the 'Search' form, write after a menu item, press 'Search' | Menu page will load | **Working** as expected |
+| Click on the 'Add To Cart' button under item in menu |  Item put in cart | **NOT** working as expected |
+| Click on the 'Place an order' button in cart | Order page load | **Working** as expected |
+| Choose which 'Products' to order | Check mark filled in | **Working** as expected |
+| Fill in 'Order' form and submit order | Submit Order confirmation popup | **Working** as expected |
+| Click on the 'Go back' button in order confirmation popup | Redirect to order | **Working** as expected |
+| Click on the 'Place order' button in order confirmation popup | Order Confirmation Load | **Working** as expected |
+| Click on the 'Go to the homepage' link in order confirmation | Redirect to home page | **Working** as expected |
+| Click on the pay now with 'PAYPAL' button in order confirmation | Paypal pop up with payment | **Working** as expected |
+| Login to paypal and pay the pay | Paypal accepting login and payment | **Working** as expected |
+| Complete purchase | Redirect o payment confirmation page | **Working** as expected |
+| Click on the 'Go back to homepage' link in payment confirmation | Redirect to home page | **Working** as expected |
+
+
+2. Footer in desktop view
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'Logo' link in the footer | Redirect to homepage | **Working** as expected |
+| Click on the 'Social' link in the footer | Open social page in a new tab | **Working** as expected |
+| Click on the 'Contact Us' link in the footer bar | Redirect to contact us page | **NOT** working as expected |
+| Click on the 'Sign Up For Newsletter' link in the footer bar | Redirect to sign up for newsletter page | **NOT** working as expected |
+| Click on the 'FAQ' link in the footer bar | Redirect to contact FAQ page | **NOT** working as expected |
+| Click on the 'Parter With Us' link in the footer bar | Redirect to contact us page | **NOT** working as expected |
+| Click on the 'Add Your Restaurant' link in the footer bar | Redirect to contact us page | **NOT** working as expected |
+| Click on the 'Sign Up To Deliver' link in the footer bar | Redirect to contact us page | **NOT** working as expected |
+| Click on the 'Restaurant Login' link in the footer bar | Redirect to restaurants dashboard | **Working** as expectedd |
+
+3. Restaurant Dashboard
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| See 'Todays total revenue' in dashboard | Calculated todays total revenue | **Working** as expectedd |
+| See 'Todays total orders' in dashboard | Calculated todays total orders | **Working** as expectedd |
+| See 'Earnings monthly' in dashboard | Calculated monthly total revenue | **NOT** working as expected |
+| See 'Earnings Annual' in dashboard | Calculated annual revenue | **NOT** working as expected |
+| See 'Todays total orders' in dashboard | Calculated todays total orders | **Working** as expectedd |
+| See all active orders | Automatic popup in filter after order submitted | **Working** as expectedd |
+| See order is paid or not paid | Automatic filled in is paid? Checkmark/Cross | **Working** as expectedd |
+| See order historic | Search order historic | **NOT** working as expected |
+| Click on the 'Details' link in order info | Redirect to order details | **Working** as expectedd |
+| See details about customer | Prefilled with customer details | **Working** as expectedd |
+| See details about items bought | Prefilled with food item | **NOT** working as expected |
+| See if order is paid or not | X mark for not been paid, check mark for pre paid |  **Working** as expectedd |
+| Click on the 'Mark as delivered' button in order details | Change to order has been delivered | **Working** as expectedd |
+| Click on the 'Add Item To Menu' link in the navigation bar | Redirect to Add item to menu | **Working** as expectedd |
+| Fill in 'Menu Item' in the form | Confirmation when upload successfully | **Working** as expectedd |
+| Fill in with missing 'Menu Item' in the form | warning "please fill in this field" | **Working** as expectedd |
+| Click on the 'Edit Menu' link in the navigation bar | Redirect to Edit menu with details | **Working** as expectedd |
+| Click on the 'Edit' button | Redirect to edit item | **Working** as expectedd|
+| Fill in 'details' to update in the form | Confirmation when update successfully | **Working** as expectedd |
+| Click on the 'Delete' button in edit menu | Popup confirmation before delete | **Working** as expectedd |
+| Click on the 'Ok' popup delete "are you sure?"  | Delete item from menu | **Working** as expectedd |
+
+
+
+
+4. As a User I can view the opening hours and contact details so that I know when the business is open and how to contact them via email, phone and socials
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'Contact Us' link in the navigation bar, scroll to bottom of page | Find contact details and opening hours | Works as expected |
+
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-06.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-13.PNG">
+
+</details>
+
+
+
+
 ## Code Validation
 ### HTML
 
@@ -514,7 +599,9 @@ Testing with lighthouse, consistent results on all pages. However, error code "U
 ![Lighthouse Best Practices](docs/readme/validation/lighthouse/validation-lighthouse-best-practices.png)
 </details>
 
-I was not able to fix the issue. To read more about the issue:
+I was not able to fix the issue. 
+
+To read more about this issue:
 https://web.dev/deprecations/
 <hr>
 
