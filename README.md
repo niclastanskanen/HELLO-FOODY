@@ -31,7 +31,7 @@ This site is .....
     - [Manual Testing](#manual-testing)
     - [Code Validation](#code-validation)
     - [Lighthouse](#lighthouse)
-  - [Bugs]()
+  - [Bugs](#bugs)
   - [Deployment](#deployment)
   - [Credits](#credits)
 
@@ -591,9 +591,80 @@ https://web.dev/deprecations/
 
 ## Bugs
 
+**Deployment to heroku**
+
+It started with me getting an error when I tried to deploy to Heroku.
+After trying to get help on slack, google and YouTube. I contacted Tutor Assistance. The person I spoke to the first time could not help me. So I had to delete the workspace and repositories and start from scratch. I then immediately started connecting to Heroku but with the same error message. I got help on slack and I needed to put in a runtime.txt with a different version of python as heroku doesn't support it. It did not work.
+I contacted Tutor assistance again and got help downgrading heroku to heroku-20 instead of heroku-22. It worked until the next day. Then I got the same error message and sought help from tutors again without success.
+
+I got downgraded to heroku-20 and test lots of different python versions in runtime.txt. After 2 days I managed to find version python-3.8-15 which has been working since then.
+
+This has caused me to lose 1 week.
+
+I have tried to clarify all the bugs but have lost order and what is what after all the stress and panic this was done due to the already tight time period.
+
+<br>
+
 ### Fixed Bugs
 
+<details><summary>See details</summary>
+
+Heroku deployment bug - fixed with downgrade to heroku-20 from heroku-22 and added runtime.txt with python version - python-3.8.15
+
+![Lighthouse](docs/readme/bugs/bug-heroku.png)
+![Lighthouse](docs/readme/bugs/bug-heroku2.png)
+![Lighthouse](docs/readme/bugs/bug-heroku3.png)
+![Lighthouse](docs/readme/bugs/bug-heroku4.png)
+
+Typo in settings.py - fixed typo
+
+![Lighthouse](docs/readme/bugs/bug-typo.png)
+
+CSRF FAIL - fixed with adding "CSRF_TRUSTED_ORIGINS = "url..."" in settings.py
+
+![Lighthouse](docs/readme/bugs/bug-csrf.png)
+![Lighthouse](docs/readme/bugs/bug-csrf-fail.png)
+
+Restaurants image failed load - fixed img src
+
+![Lighthouse](docs/readme/bugs/bug-restaurant-image.png)
+
+Email host password - Typo, fixed change [] to ()
+
+![Lighthouse](docs/readme/bugs/bug-email.png)
+
+</details>
+
+<br>
+
 ### Remaining Bugs
+**Bug In restaurant dashboard, edit item.**
+I sought help from the tutor because I got error codes when I had my "post" in class "EditMenu"
+
+I understood that there was something wrong with my URL, however I received insufficient help and a reference to follow "Django blog" from LMS. This didn't help as it was probably my URL that gave me the wrong code.
+Due to lack of time, this is not fixed.
+
+You can edit items if you have an ID on the product without logging in.
+
+<details><summary>See Details</summary>
+
+![Lighthouse](docs/readme/bugs/bug-add-item.png)
+![Lighthouse](docs/readme/bugs/bug-add-item2.png)
+![Lighthouse](docs/readme/bugs/bug-add-item-3.png)
+![Lighthouse](docs/readme/bugs/bug-add-item-url.png)
+![Lighthouse](docs/readme/bugs/bug-add-item-code.png)
+
+Automatic testing, failed
+
+![Lighthouse](docs/readme/bugs/bug-heroku-postgres.png)
+
+Sometimes after logging in, welcome message shows in Add Item and Edit Item in Restaurant Dashboard
+
+![Lighthouse](docs/readme/bugs/bug-confirmation-dashboard.png)
+
+</details>
+
+<br>
 
 <hr>
 
