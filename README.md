@@ -506,7 +506,16 @@ helloFoody
 <br>
 
 ## Lighthouse
+Testing with lighthouse, consistent results on all pages. However, error code "Uses deprecated APIs" which lowers the rating on Best Practices.
 
+<details><summary>See Pictures</summary>
+
+![Lighthouse](docs/readme/validation/lighthouse/validation-lighthouse.png)
+![Lighthouse Best Practices](docs/readme/validation/lighthouse/validation-lighthouse-best-practices.png)
+</details>
+
+I was not able to fix the issue. To read more about the issue:
+https://web.dev/deprecations/
 <hr>
 
 ## Bugs
