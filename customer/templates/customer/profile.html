@@ -1,7 +1,7 @@
 {% extends 'customer/base.html' %}
 
 {% block content %}
-<section class="vh-100">
+<div class="vh-100">
   <div class="container py-5">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -56,25 +56,22 @@
             <div class="row">
               <div class="text-center">
                 <button type="button" class="btn btn-outline-primary btn-rounded">Update Profile <i
-                  class="fas fa-user-edit"></i></button>
+                    class="fas fa-user-edit"></i></button>
               </div>
             </div>
             <hr>
             <div class="row">
               <div class="text-center">
-                <a href="{% url 'account_logout' %}">
-                  <button type="button" class="btn btn-primary btn-rounded">
-                    Log Out</button></a>
+                <a href="{% url 'account_logout' %}" class="btn btn-primary btn-rounded">
+                  Log Out</a>
               </div>
             </div>
             {% else %}
-            <a href="{% url 'account_login' %}">
-              <button type="button" class="btn btn-lg btn-block btn-outline-primary btn-rounded">
-                Sign In <i class="fas fa-sign-in-alt"></i></button></a>
-            <hr class="hr hr-blurry" />
-            <a href="{% url 'account_signup' %}">
-              <button type="button" class="btn btn-lg btn-block btn-primary btn-rounded">Sign Up <i
-                  class="fas fa-user-plus"></i></button>
+            <a href="{% url 'account_login' %}" class="btn btn-lg btn-block btn-outline-primary btn-rounded">
+              Sign In <i class="fas fa-sign-in-alt"></i></a>
+            <hr class="hr hr-blurry">
+            <a href="{% url 'account_signup' %}" class="btn btn-lg btn-block btn-primary btn-rounded">
+              Sign Up <i class="fas fa-user-plus"></i>
             </a>
             {% endif %}
           </div>
@@ -82,5 +79,5 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 {% endblock content %}
