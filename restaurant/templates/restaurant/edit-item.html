@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="ms-5">
-    <td><a href="{% url 'edit-menu' %}"><i class="fas fa-arrow-left pt-3 ml-5"> Go Back</i></a></td>
+    <a href="{% url 'edit-menu' %}"><i class="fas fa-arrow-left pt-3 ml-5"> Go Back</i></a>
 </div>
 <div class="container pt-3">
     <div class="card">
@@ -19,7 +19,7 @@
                 <form method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form.as_p }}
-                    <input type="submit" class="btn btn-primary btn-rounded" value="Update Item"></input>
+                    <input type="submit" class="btn btn-primary btn-rounded" value="Update Item">
                 </form>
             </div>
         </div>
