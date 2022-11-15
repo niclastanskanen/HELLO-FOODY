@@ -473,13 +473,13 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 | Try to reach Restaurant delete item without login | Redirect to login | **Working** as expectedd |
 | Try to reach Restaurant delete item with item id without login | Redirect to login | **NOT** working as expected |
 | Try to reach Restaurant dashboard with user login | Denied, forbidden | **Working** as expectedd |
-| Try to reach Restaurant edit menu with user login | Redirect to login | **Working** as expectedd |
-| Try to reach Restaurant add item with user login | Redirect to login | **Working** as expectedd |
-| Try to reach Restaurant order details with user login | Redirect to login | **Working** as expectedd |
-| Try to reach Restaurant edit item with user login | Redirect to login | **Working** as expectedd |
-| Try to reach Restaurant edit item with item id with user login | Redirect to login | **NOT** working as expected |
-| Try to reach Restaurant delete item with user login | Redirect to login | **Working** as expectedd |
-| Try to reach Restaurant delete item with item id with user login | Redirect to login | **NOT** working as expected |
+| Try to reach Restaurant edit menu with user login | Denied, forbidden | **Working** as expectedd |
+| Try to reach Restaurant add item with user login | Denied, forbidden | **Working** as expectedd |
+| Try to reach Restaurant order details with user login | Denied, forbidden | **Working** as expectedd |
+| Try to reach Restaurant edit item with user login | Denied, forbidden | **Working** as expectedd |
+| Try to reach Restaurant edit item with item id with user login | Denied, forbidden | **NOT** working as expected |
+| Try to reach Restaurant delete item with user login | Denied, forbidden | **Working** as expectedd |
+| Try to reach Restaurant delete item with item id with user login | Denied, forbidden | **NOT** working as expected |
 
 
 <hr>
@@ -647,7 +647,7 @@ CSRF FAIL - fixed with adding "CSRF_TRUSTED_ORIGINS = "url..."" in settings.py
 ![Lighthouse](docs/readme/bugs/bug-csrf.png)
 ![Lighthouse](docs/readme/bugs/bug-csrf-fail.png)
 
-Restaurants image failed load - fixed img src
+Restaurants image failed load - fixed static img src
 
 ![Lighthouse](docs/readme/bugs/bug-restaurant-image.png)
 
