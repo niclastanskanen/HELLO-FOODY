@@ -460,6 +460,28 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 | Click on the 'Delete' button in edit menu | Popup confirmation before delete | **Working** as expectedd |
 | Click on the 'Ok' popup delete "are you sure?"  | Delete item from menu | **Working** as expectedd |
 
+4. Verification & Authentication
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Try to reach Restaurant dashboard without login | Redirect to login | **Working** as expectedd |
+| Try to reach Restaurant edit menu without login | Redirect to login | **Working** as expectedd |
+| Try to reach Restaurant add item without login | Redirect to login | **Working** as expectedd |
+| Try to reach Restaurant order details without login | Redirect to login | **Working** as expectedd |
+| Try to reach Restaurant edit item without login | Redirect to login | **Working** as expectedd |
+| Try to reach Restaurant edit item with item id without login | Redirect to login | **NOT** working as expected |
+| Try to reach Restaurant delete item without login | Redirect to login | **Working** as expectedd |
+| Try to reach Restaurant delete item with item id without login | Redirect to login | **NOT** working as expected |
+| Try to reach Restaurant dashboard with user login | Denied, forbidden | **Working** as expectedd |
+| Try to reach Restaurant edit menu with user login | Redirect to login | **Working** as expectedd |
+| Try to reach Restaurant add item with user login | Redirect to login | **Working** as expectedd |
+| Try to reach Restaurant order details with user login | Redirect to login | **Working** as expectedd |
+| Try to reach Restaurant edit item with user login | Redirect to login | **Working** as expectedd |
+| Try to reach Restaurant edit item with item id with user login | Redirect to login | **NOT** working as expected |
+| Try to reach Restaurant delete item with user login | Redirect to login | **Working** as expectedd |
+| Try to reach Restaurant delete item with item id with user login | Redirect to login | **NOT** working as expected |
+
+
 <hr>
 
 ## Code Validation
