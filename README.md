@@ -4,6 +4,11 @@
 
 The live link can be found here -> [Hello Foody](https://hello-foody.herokuapp.com/)
 
+## 💻 Developer's note
+This site is ..... 
+
+[![linkedin](https://skills.thijs.gg/icons?i=linkedin)](https://www.linkedin.com/in/niclastanskanen/)
+
 <hr>
 
 ## Table of Contents
@@ -27,6 +32,7 @@ The live link can be found here -> [Hello Foody](https://hello-foody.herokuapp.c
     - [Code Validation](#code-validation)
     - [Wave](#wave---web-accessibility-evaluation-tool)
     - [Lighthouse](#lighthouse)
+  - [Bugs]()
   - [Deployment](#deployment)
   - [Credits](#credits)
 
@@ -209,7 +215,7 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 <br>
 
 ## Database Schema
- IMAGE <------>
+![Home Desktop](docs/readme/database-schema.png)
 
 <hr>
 
@@ -398,6 +404,14 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 
 <hr>
 
+## Bugs
+
+### Fixed Bugs
+
+### Remaining Bugs
+
+<hr>
+
 ## Deployment
 
 ### Forking the GitHub Repository
@@ -504,6 +518,7 @@ repository by using the following steps...
 - [Image Compressor](https://business-tools.clickfunnels.com/business-tools/compress-image)
 - [Slogan Generator](https://www.shopify.com/tools/slogan-maker/show/LHBQ4Uv7Sl8=--dTENQtEIWXUvYN4p--AP6Rt%2FvizPPCBvpMr1HGAA==.html)
 - [Logo And Name](https://www.squadhelp.com/business-name-generator/word/Food%20Delivery?category_ids=633&max_length=&excluded_keywords=&name_types=)
+- [Data Schema](https://drawsql.app/)
 
 ### Coding Guide
 - [Update Edit Item - codemy.com youtube channel](https://www.youtube.com/watch?time_continue=1&v=jCM-m_3Ysqk&feature=emb_title)
