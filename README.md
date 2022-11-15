@@ -30,7 +30,6 @@ This site is .....
   - [Testing](#testing)
     - [Manual Testing](#manual-testing)
     - [Code Validation](#code-validation)
-    - [Wave](#wave---web-accessibility-evaluation-tool)
     - [Lighthouse](#lighthouse)
   - [Bugs]()
   - [Deployment](#deployment)
@@ -397,6 +396,90 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 ## Code Validation
 ### HTML
 
+<details><summary>Home Page</summary>
+
+![CSS Validation](docs/readme/validation/html/validation-html-firstpage.png)
+</details>
+
+<details><summary>Restaurants</summary>
+
+![CSS Validation](docs/readme/validation/html/validation-html-restaurants.png)
+</details>
+
+<details><summary>Menu</summary>
+
+![CSS Validation](docs/readme/validation/html/validation-html-menu.png)
+</details>
+
+<details><summary>Order</summary>
+
+![CSS Validation](docs/readme/validation/html/validation-html-order.png)
+</details>
+
+<details><summary>Order Details</summary>
+
+![CSS Validation](docs/readme/validation/html/validation-html-order-details.png)
+</details>
+
+<details><summary>Order Confirmation</summary>
+
+![CSS Validation](docs/readme/validation/html/validation-html-order-confirmation.png)
+</details>
+
+<details><summary>Order Pay Confirmation</summary>
+
+![CSS Validation](docs/readme/validation/html/validation-html-order-pay-confirmation.png)
+</details>
+
+<details><summary>Profile</summary>
+
+![CSS Validation](docs/readme/validation/html/validation-html-profile.png)
+</details>
+
+<details><summary>Cart</summary>
+
+![CSS Validation](docs/readme/validation/html/validation-html-cart.png)
+</details>
+
+<details><summary>Sign In</summary>
+
+![CSS Validation](docs/readme/validation/html/validation-html-login.png)
+</details>
+
+<details><summary>Sign Out</summary>
+
+![CSS Validation](docs/readme/validation/html/validation-html-signout.png)
+</details>
+
+<details><summary>Sign Up</summary>
+
+![CSS Validation](docs/readme/validation/html/validation-html-signup.png)
+</details>
+
+<br>
+
+#### Restaurants Dashboard
+
+<details><summary>Dashboard</summary>
+
+![CSS Validation](docs/readme/validation/html/validation-html-dashboard.png)
+</details>
+
+<details><summary>Add Menu</summary>
+
+![CSS Validation](docs/readme/validation/html/validation-html-add-menu.png)
+</details>
+
+<details><summary>Edit Menu</summary>
+
+![CSS Validation](docs/readme/validation/html/validation-html-edit-menu.png)
+</details>
+
+<details><summary>Edit Item</summary>
+
+![CSS Validation](docs/readme/validation/html/validation-html-edit-item.png)
+</details>
+
 <br>
 
 ### CSS Validation
@@ -419,10 +502,6 @@ helloFoody
 <details><Summary>Restaurant</Summary>
 <a href="https://gyazo.com/7d5896b2587a051db5f0efe69c271ac1"><img src="https://i.gyazo.com/7d5896b2587a051db5f0efe69c271ac1.gif" alt="Image from Gyazo" width="1000"/></a>
 </details>
-
-<br>
-
-## Wave - Web Accessibility Evaluation Tool
 
 <br>
 
