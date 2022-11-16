@@ -423,7 +423,7 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 | Click on the 'Work With Us' link on first page | Contact page will load | **Working** as expected |
 | Click on the 'Available on app store' link on first page | Redirect new tab to appstore | **Working** as expected |
 | Click on the 'Available on google play' link on first page | Redirect new tab to google play | **Working** as expected |
-| Fill in with missing fields 'Contact us' in the form | warning "This field is required" | **Working** as expectedd |
+| Fill in with missing fields 'Contact us' in the form | warning "This field is required" | **Working** as expected |
 | Click on the 'See menu' button in Restaurant | Menu for specific restaurant will show | **NOT** working as expected |
 | Click on the 'Search' link in the navigation bar | Menu page will load | **Working** as expected |
 | Write on the 'Search' form, write after a menu item, press 'Search' | Searching for items | **Working** as expected |
@@ -431,7 +431,7 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 | Click on the 'Place an order' button in cart | Order page load | **Working** as expected |
 | Choose which 'Products' to order | Check mark filled in | **Working** as expected |
 | Fill in 'Order' form and submit order | Submit Order confirmation popup | **Working** as expected |
-| Fill in with missing fields 'Order' in the form | warning "please fill in this field" | **Working** as expectedd |
+| Fill in with missing fields 'Order' in the form | warning "please fill in this field" | **Working** as expected |
 | Click on the 'Go back' button in order confirmation popup | Redirect to order | **Working** as expected |
 | Click on the 'Place order' button in order confirmation popup | Order Confirmation Load | **Working** as expected |
 | Click on the 'Go to the homepage' link in order confirmation | Redirect to home page | **Working** as expected |
@@ -454,53 +454,53 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 | Click on the 'Parter With Us' link in the footer bar | Redirect to contact us page | **Working** as expected  |
 | Click on the 'Add Your Restaurant' link in the footer bar | Redirect to contact us page | **Working** as expected  |
 | Click on the 'Sign Up To Deliver' link in the footer bar | Redirect to contact us page | **Working** as expected  |
-| Click on the 'Restaurant Login' link in the footer bar | Redirect to restaurants dashboard | **Working** as expectedd |
+| Click on the 'Restaurant Login' link in the footer bar | Redirect to restaurants dashboard | **Working** as expected |
 
 3. Restaurant Dashboard
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| See 'Todays total revenue' in dashboard | Calculated todays total revenue | **Working** as expectedd |
-| See 'Todays total orders' in dashboard | Calculated todays total orders | **Working** as expectedd |
+| See 'Todays total revenue' in dashboard | Calculated todays total revenue | **Working** as expected |
+| See 'Todays total orders' in dashboard | Calculated todays total orders | **Working** as expected |
 | See 'Earnings monthly' in dashboard | Calculated monthly total revenue | **NOT** working as expected |
 | See 'Earnings Annual' in dashboard | Calculated annual revenue | **NOT** working as expected |
-| See 'Todays total orders' in dashboard | Calculated todays total orders | **Working** as expectedd |
-| See all active orders | Automatic popup in filter after order submitted | **Working** as expectedd |
-| See order is paid or not paid | Automatic filled in is paid? Checkmark/X | **Working** as expectedd |
+| See 'Todays total orders' in dashboard | Calculated todays total orders | **Working** as expected |
+| See all active orders | Automatic popup in filter after order submitted | **Working** as expected |
+| See order is paid or not paid | Automatic filled in is paid? Checkmark/X | **Working** as expected |
 | See order historic | Search order historic | **NOT** working as expected |
-| Click on the 'Details' link in order info | Redirect to order details | **Working** as expectedd |
-| See details about customer | Prefilled with customer details | **Working** as expectedd |
-| See details about items bought | Prefilled with food item | **NOT** working as expected |
-| See if order is paid or not | X mark for not been paid, check mark for pre paid |  **Working** as expectedd |
-| Click on the 'Mark as delivered' button in order details | Change to order has been delivered | **Working** as expectedd |
-| Click on the 'Add Item To Menu' link in the navigation bar | Redirect to Add item to menu | **Working** as expectedd |
-| Fill in 'Menu Item' in the form | Confirmation when upload successfully | **Working** as expectedd |
-| Fill in with missing 'Menu Item' in the form | warning "please fill in this field" | **Working** as expectedd |
-| Click on the 'Edit Menu' link in the navigation bar | Redirect to Edit menu with details | **Working** as expectedd |
-| Click on the 'Edit' button | Redirect to edit item | **Working** as expectedd|
-| Fill in 'details' to update in the form | Confirmation when update successfully | **Working** as expectedd |
-| Click on the 'Delete' button in edit menu | Popup confirmation before delete | **Working** as expectedd |
-| Click on the 'Ok' popup delete "are you sure?"  | Delete item from menu | **Working** as expectedd |
+| Click on the 'Details' link in order info | Redirect to order details | **Working** as expected |
+| See details about customer | Prefilled with customer details | **Working** as expected |
+| See details about items bought | Prefilled with food item | **Working** as expected |
+| See if order is paid or not | X mark for not been paid, check mark for pre paid |  **Working** as expected |
+| Click on the 'Mark as delivered' button in order details | Change to order has been delivered | **Working** as expected |
+| Click on the 'Add Item To Menu' link in the navigation bar | Redirect to Add item to menu | **Working** as expected |
+| Fill in 'Menu Item' in the form | Confirmation when upload successfully | **Working** as expected |
+| Fill in with missing 'Menu Item' in the form | warning "please fill in this field" | **Working** as expected |
+| Click on the 'Edit Menu' link in the navigation bar | Redirect to Edit menu with details | **Working** as expected |
+| Click on the 'Edit' button | Redirect to edit item | **Working** as expected|
+| Fill in 'details' to update in the form | Confirmation when update successfully | **Working** as expected |
+| Click on the 'Delete' button in edit menu | Popup confirmation before delete | **Working** as expected |
+| Click on the 'Ok' popup delete "are you sure?"  | Delete item from menu | **Working** as expected |
 
 4. Verification & Authentication
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| Try to reach Restaurant dashboard without login | Redirect to login | **Working** as expectedd |
-| Try to reach Restaurant edit menu without login | Redirect to login | **Working** as expectedd |
-| Try to reach Restaurant add item without login | Redirect to login | **Working** as expectedd |
-| Try to reach Restaurant order details without login | Redirect to login | **Working** as expectedd |
-| Try to reach Restaurant edit item without login | Redirect to login | **Working** as expectedd |
+| Try to reach Restaurant dashboard without login | Redirect to login | **Working** as expected |
+| Try to reach Restaurant edit menu without login | Redirect to login | **Working** as expected |
+| Try to reach Restaurant add item without login | Redirect to login | **Working** as expected |
+| Try to reach Restaurant order details without login | Redirect to login | **Working** as expected |
+| Try to reach Restaurant edit item without login | Redirect to login | **Working** as expected |
 | Try to reach Restaurant edit item with item id without login | Redirect to login | **NOT** working as expected |
-| Try to reach Restaurant delete item without login | Redirect to login | **Working** as expectedd |
+| Try to reach Restaurant delete item without login | Redirect to login | **Working** as expected |
 | Try to reach Restaurant delete item with item id without login | Redirect to login | **NOT** working as expected |
-| Try to reach Restaurant dashboard with user login | Denied, forbidden | **Working** as expectedd |
-| Try to reach Restaurant edit menu with user login | Denied, forbidden | **Working** as expectedd |
-| Try to reach Restaurant add item with user login | Denied, forbidden | **Working** as expectedd |
-| Try to reach Restaurant order details with user login | Denied, forbidden | **Working** as expectedd |
-| Try to reach Restaurant edit item with user login | Denied, forbidden | **Working** as expectedd |
+| Try to reach Restaurant dashboard with user login | Denied, forbidden | **Working** as expected |
+| Try to reach Restaurant edit menu with user login | Denied, forbidden | **Working** as expected |
+| Try to reach Restaurant add item with user login | Denied, forbidden | **Working** as expected |
+| Try to reach Restaurant order details with user login | Denied, forbidden | **Working** as expected |
+| Try to reach Restaurant edit item with user login | Denied, forbidden | **Working** as expected |
 | Try to reach Restaurant edit item with item id with user login | Denied, forbidden | **NOT** working as expected |
-| Try to reach Restaurant delete item with user login | Denied, forbidden | **Working** as expectedd |
+| Try to reach Restaurant delete item with user login | Denied, forbidden | **Working** as expected |
 | Try to reach Restaurant delete item with item id with user login | Denied, forbidden | **NOT** working as expected |
 
 
