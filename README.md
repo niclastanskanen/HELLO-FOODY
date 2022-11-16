@@ -824,6 +824,7 @@ repository by using the following steps...
 - [Slogan Generator](https://www.shopify.com/tools/slogan-maker/show/LHBQ4Uv7Sl8=--dTENQtEIWXUvYN4p--AP6Rt%2FvizPPCBvpMr1HGAA==.html)
 - [Logo And Name](https://www.squadhelp.com/business-name-generator/word/Food%20Delivery?category_ids=633&max_length=&excluded_keywords=&name_types=)
 - [Data Schema](https://drawsql.app/)
+- [Mailtrap](https://mailtrap.io)
 
 ### Coding Guide
 - [Update Edit Item - codemy.com youtube channel](https://www.youtube.com/watch?time_continue=1&v=jCM-m_3Ysqk&feature=emb_title)

@@ -23,6 +23,13 @@
                         <p class="card-text">Street: {{ order.street }}</p>
                         <p class="card-text">City: {{ order.city }}</p>
                         <p class="card-text">Zip Code: {{ order.zip_code }}</p>
+                        <hr class="border border-primary opacity-50">
+                        <h5 class="card-title">Ordered Food:</h5>
+                        {% for order in order.items.all %}
+                        <p class="card-text">{{ order.name }}: ${{ order.price }}</p>
+                        {% endfor %}
+                        <hr class="border border-success opacity-50">
+                        <p class="card-text">Total Price: ${{ order.price }}</p>
                     </div>
                 </div>
             </div>
