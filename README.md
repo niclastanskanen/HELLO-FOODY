@@ -404,6 +404,11 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 | Click on the 'Profile' link in the navigation bar | Login page will load | **Working** as expected |
 | Click on the 'Profile' link in the navigation bar | See profile details when logged in | **NOT** working as expected |
 | Click on the 'Restaurants' link in the navigation bar | Restaurants page will load | **Working** as expected |
+| Click on the 'Ride With Us' link on first page | Contact page will load | **Working** as expected |
+| Click on the 'Partner With Us' link on first page | Contact page will load | **Working** as expected |
+| Click on the 'Work With Us' link on first page | Contact page will load | **Working** as expected |
+| Click on the 'Available on app store' link on first page | Redirect new tab to appstore | **Working** as expected |
+| Click on the 'Available on google play' link on first page | Redirect new tab to google play | **Working** as expected |
 | Click on the 'See menu' button in Restaurant | Menu for specific restaurant will show | **NOT** working as expected |
 | Click on the 'Search' link in the navigation bar | Menu page will load | **Working** as expected |
 | Write on the 'Search' form, write after a menu item, press 'Search' | Menu page will load | **Working** as expected |
