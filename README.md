@@ -492,6 +492,11 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 ![CSS Validation](docs/readme/validation/html/validation-html-firstpage.png)
 </details>
 
+<details><summary>Contact</summary>
+
+![CSS Validation](docs/readme/validation/html/validation-html-contact.png)
+</details>
+
 <details><summary>Restaurants</summary>
 
 ![CSS Validation](docs/readme/validation/html/validation-html-restaurants.png)
