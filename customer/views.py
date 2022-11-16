@@ -20,8 +20,10 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             cd = form.cleaned_data
+            send_mail(cd['subject'], cd['message'], cd.get(
+                'email', 'noreply@example.com'), ['contact@hellofoody.com'])
 
-            return HttpResponseRedirect('/contact?submitted=True')
+        return HttpResponseRedirect('/contact?submitted=True')
     else:
         form = ContactForm()
         if 'submitted' in request.GET:

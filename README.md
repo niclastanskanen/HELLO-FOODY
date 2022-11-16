@@ -436,7 +436,7 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 | Click on the 'Social' link in the footer | Open social page in a new tab | **Working** as expected |
 | Click on the 'Contact Us' link in the footer bar | Redirect to contact us page | **Working** as expected |
 | Click on the 'Sign Up For Newsletter' link in the footer bar | Redirect to sign up for newsletter page | **NOT** working as expected |
-| Click on the 'FAQ' link in the footer bar | Redirect to contact FAQ page | **NOT** working as expected |
+| Click on the 'FAQ' link in the footer bar | Redirect to FAQ page | **NOT** working as expected |
 | Click on the 'Parter With Us' link in the footer bar | Redirect to contact us page | **Working** as expected  |
 | Click on the 'Add Your Restaurant' link in the footer bar | Redirect to contact us page | **Working** as expected  |
 | Click on the 'Sign Up To Deliver' link in the footer bar | Redirect to contact us page | **Working** as expected  |
