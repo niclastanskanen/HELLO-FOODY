@@ -13,9 +13,9 @@
                         <p class="success">Thank you</p>
                         {% else %}
                         <hr class="my-4">
-                        <form action="" method="POST" novalidate>
+                        <form method="POST" novalidate>
                             {% csrf_token %}
-                            {{ form.as_table }}
+                            {{ form.as_p }}
                             <hr class="my-4">
                             <input type="submit" value="Submit" class="btn btn-primary btn-rounded">
                         </form>
