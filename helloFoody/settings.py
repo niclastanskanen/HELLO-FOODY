@@ -45,7 +45,20 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 
+ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_EMAIL_REQUIRED = True
+
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'SCOPE': [
+            'profile',
+            'email',
+        ],
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+        }
+    }
+}
 
 INSTALLED_APPS = [
 
@@ -58,6 +71,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.facebook',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
@@ -68,7 +83,7 @@ INSTALLED_APPS = [
     'user',
 ]
 
-SITE_ID = 1
+SITE_ID = 2
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
