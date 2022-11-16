@@ -250,6 +250,20 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 
 <br>
 
+### Contact
+
+<details><summary>See feature images</summary>
+
+![Footer](docs/readme/features/features-contact.png)
+![Footer](docs/readme/features/features-contact-thank-you.png)
+</details>
+<details><summary>Email Confirmation</summary>
+
+![Email Confirmation](docs/readme/features/features-contact-email.png)
+</details>
+
+<br>
+
 ### Restaurants
 
 <details><summary>See feature images</summary>
