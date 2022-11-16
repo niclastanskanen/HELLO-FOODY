@@ -1,23 +1,29 @@
 {% extends 'customer/base.html' %}
 
 {% block content %}
-<h1>Contact us</h1>
-{% if submitted %}
-<p class="success">Your message was submitted successfully. Thank you</p>
-
-{% else %}
-<form action="" method="POST" novalidate>
-    {% csrf_token %}
-    <table>
-        {{ form.as_table }}
-        <tr>
-            <td>&nbsp;</td>
-            <td>
-                <input type="submit" value="Submit">
-            </td>
-        </tr>
-    </table>
-</form>
-{% endif %}
-
+<section class="vh-100">
+    <div class="container pt-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+                        <h3 class="mb-2">Contact Us</h3>
+                        {% if submitted %}
+                        <p class="success">Your message was submitted successfully.</p>
+                        <p class="success">Thank you</p>
+                        {% else %}
+                        <hr class="my-4">
+                        <form action="" method="POST" novalidate>
+                            {% csrf_token %}
+                            {{ form.as_table }}
+                            <hr class="my-4">
+                            <input type="submit" value="Submit" class="btn btn-primary btn-rounded">
+                        </form>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock content %}

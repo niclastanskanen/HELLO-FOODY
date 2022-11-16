@@ -20,13 +20,15 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             cd = form.cleaned_data
+
             return HttpResponseRedirect('/contact?submitted=True')
     else:
         form = ContactForm()
         if 'submitted' in request.GET:
             submitted = True
 
-    return render(request, 'customer/contact.html', {'form': form, 'submitted': submitted})
+    return render(request, 'customer/contact.html',
+                  {'form': form, 'submitted': submitted})
 
 
 class Restaurants(View):
