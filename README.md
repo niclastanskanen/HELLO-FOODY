@@ -416,7 +416,11 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 | Click on the 'Sign In' link in the navigation bar | Login page will load | **Working** as expected |
 | Click on the 'Log out' link in the navigation bar | Log out page will load | **Working** as expected |
 | Click on the 'Profile' link in the navigation bar | Login page will load | **Working** as expected |
-| Click on the 'Profile' link in the navigation bar | See profile details when logged in | **NOT** working as expected |
+| Click on the 'Profile' link in the navigation bar | See profile full name when logged in |  **Working** as expected |
+| Click on the 'Profile' link in the navigation bar | See profile email when logged in |  **Working** as expected |
+| Click on the 'Profile' link in the navigation bar | See profile Phone when logged in | **NOT** working as expected |
+| Click on the 'Profile' link in the navigation bar | See profile Street when logged in | **NOT** working as expected |
+| Click on the 'Profile' link in the navigation bar | See profile City when logged in | **NOT** working as expected |
 | Click on the 'Restaurants' link in the navigation bar | Restaurants page will load | **Working** as expected |
 | Click on the 'Ride With Us' link on first page | Contact page will load | **Working** as expected |
 | Click on the 'Partner With Us' link on first page | Contact page will load | **Working** as expected |
