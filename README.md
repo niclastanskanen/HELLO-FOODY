@@ -2,10 +2,32 @@
 
 ![Am I Responsive](docs/readme/responsive.png)
 
-The live link can be found here -> [Hello Foody](https://hello-foody.herokuapp.com/)
+## The live link can be found here -> [Hello Foody](https://hello-foody.herokuapp.com/)
+
+<hr>
 
 ## 💻 Developer's note
-This site is ..... 
+The project is my fourth from Code Institute.
+
+**Start date: 02 November 2022**
+
+**Deadline: November 16, 2022.**
+
+The development of this project has been one of the most enjoyable experiences of my career. I dug into the Django documentation and went through many ups and downs.
+
+After I receive the grade for this project, I look forward to finishing it.
+
+The project is about 80% complete. I would have loved to have had a little more time to complete this!
+
+"Full-Stack Toolkit" was the task
+
+*Scope of the project:*
+
+"The goal of this project is to build a Full-Stack site to control a centrally-owned dataset using business logic. You will establish an authentication mechanism and provide role-based access to the site's data or other activities based on the dataset."
+
+<hr>
+
+You can find me on LinkedIn here 
 
 [![linkedin](https://skills.thijs.gg/icons?i=linkedin)](https://www.linkedin.com/in/niclastanskanen/)
 
