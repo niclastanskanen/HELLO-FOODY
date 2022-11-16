@@ -1,15 +1,32 @@
 import json
 from django.shortcuts import render, redirect
+from django.http import HttpResponseRedirect
 from django.views import View
 from django.db.models import Q
 from django.core.mail import send_mail
 from .models import MenuItem, Category, OrderModel, Restaurant
+from .forms import ContactForm
 
 
 class Index(View):
     def get(self, request, *args, **kwargs):
 
         return render(request, 'customer/index.html')
+
+
+def contact(request):
+    submitted = False
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            cd = form.cleaned_data
+            return HttpResponseRedirect('/contact?submitted=True')
+    else:
+        form = ContactForm()
+        if 'submitted' in request.GET:
+            submitted = True
+
+    return render(request, 'customer/contact.html', {'form': form, 'submitted': submitted})
 
 
 class Restaurants(View):
