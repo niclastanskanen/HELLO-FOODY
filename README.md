@@ -409,19 +409,22 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 | Click on the 'Work With Us' link on first page | Contact page will load | **Working** as expected |
 | Click on the 'Available on app store' link on first page | Redirect new tab to appstore | **Working** as expected |
 | Click on the 'Available on google play' link on first page | Redirect new tab to google play | **Working** as expected |
+| Fill in with missing fields 'Contact us' in the form | warning "This field is required" | **Working** as expectedd |
 | Click on the 'See menu' button in Restaurant | Menu for specific restaurant will show | **NOT** working as expected |
 | Click on the 'Search' link in the navigation bar | Menu page will load | **Working** as expected |
-| Write on the 'Search' form, write after a menu item, press 'Search' | Menu page will load | **Working** as expected |
+| Write on the 'Search' form, write after a menu item, press 'Search' | Searching for items | **Working** as expected |
 | Click on the 'Add To Cart' button under item in menu |  Item put in cart | **NOT** working as expected |
 | Click on the 'Place an order' button in cart | Order page load | **Working** as expected |
 | Choose which 'Products' to order | Check mark filled in | **Working** as expected |
 | Fill in 'Order' form and submit order | Submit Order confirmation popup | **Working** as expected |
+| Fill in with missing fields 'Order' in the form | warning "please fill in this field" | **Working** as expectedd |
 | Click on the 'Go back' button in order confirmation popup | Redirect to order | **Working** as expected |
 | Click on the 'Place order' button in order confirmation popup | Order Confirmation Load | **Working** as expected |
 | Click on the 'Go to the homepage' link in order confirmation | Redirect to home page | **Working** as expected |
 | Click on the pay now with 'PAYPAL' button in order confirmation | Paypal pop up with payment | **Working** as expected |
 | Login to paypal and pay the pay | Paypal accepting login and payment | **Working** as expected |
 | Complete purchase | Redirect o payment confirmation page | **Working** as expected |
+| Click on the 'Go back to homepage' link in payment confirmation | Redirect to home page | **Working** as expected |
 | Click on the 'Go back to homepage' link in payment confirmation | Redirect to home page | **Working** as expected |
 
 
@@ -431,12 +434,12 @@ Google fonts Roboto, 300, 400, 500 & 700 -> https://fonts.google.com/specimen/Ro
 ------------ | ------------ | ------------ |
 | Click on the 'Logo' link in the footer | Redirect to homepage | **Working** as expected |
 | Click on the 'Social' link in the footer | Open social page in a new tab | **Working** as expected |
-| Click on the 'Contact Us' link in the footer bar | Redirect to contact us page | **NOT** working as expected |
+| Click on the 'Contact Us' link in the footer bar | Redirect to contact us page | **Working** as expected |
 | Click on the 'Sign Up For Newsletter' link in the footer bar | Redirect to sign up for newsletter page | **NOT** working as expected |
 | Click on the 'FAQ' link in the footer bar | Redirect to contact FAQ page | **NOT** working as expected |
-| Click on the 'Parter With Us' link in the footer bar | Redirect to contact us page | **NOT** working as expected |
-| Click on the 'Add Your Restaurant' link in the footer bar | Redirect to contact us page | **NOT** working as expected |
-| Click on the 'Sign Up To Deliver' link in the footer bar | Redirect to contact us page | **NOT** working as expected |
+| Click on the 'Parter With Us' link in the footer bar | Redirect to contact us page | **Working** as expected  |
+| Click on the 'Add Your Restaurant' link in the footer bar | Redirect to contact us page | **Working** as expected  |
+| Click on the 'Sign Up To Deliver' link in the footer bar | Redirect to contact us page | **Working** as expected  |
 | Click on the 'Restaurant Login' link in the footer bar | Redirect to restaurants dashboard | **Working** as expectedd |
 
 3. Restaurant Dashboard
