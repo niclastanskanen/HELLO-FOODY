@@ -136,4 +136,3 @@ def delete_item(request, pk):
     item = MenuItem.objects.get(pk=pk)
     item.delete()
     return render(request, 'restaurant/dashboard.html')
-
